@@ -1,0 +1,22 @@
+{
+  "id" : "hylotlorigin3",
+  "species" : "hylotl",
+  "title" : "Hylotl Directive",
+  "description" : "Spread your peace.",
+  "icon" : "hylotlorigin1.png",
+  "contentPages" : [
+    "Spread Your Peace
+
+Dearest Hylotl missionary,
+
+You have gone out into the great wide world to spread the glory of our species, and to help those less fortunate than ourselves. For this, we thank you.
+
+May the Hylotl spread peace throughout the universe. Be discerning. Be polite. And remember Directive 0451. We must gather knowledge and shoulder its weight, for",
+
+    "knowledge is truth, and truth brings enlightenment. We will bring that enlightenment to the others and, in time, they too will share in our peace."
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 0
+  }
+}

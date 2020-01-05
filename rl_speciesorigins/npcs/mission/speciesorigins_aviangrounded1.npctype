@@ -1,0 +1,55 @@
+{
+  "type" : "speciesorigins_aviangrounded1",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_speaker",
+
+    "behaviorConfig" : {
+      "speakRange" : 5
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "You were brave to listen to your doubts.",
+            "Your prayers have not gone unanswered.",
+            "Go now, but know that when you make your leap...",
+            "something greater than faith will aid you."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Quick <entityname>, take this earpiece."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "aviantier1chest", "parameters" : { "colorIndex" : 3 } }
+          ],
+          "legs" : [
+            { "name" : "aviantier1pants", "parameters" : { "colorIndex" : 3 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "novakidorigin",
+    "species" : "novakid",
+    "rules" : [
+    ],
+    "anchor" : [ "novakidorigin" ],
+    "gravity" : 40,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "novakidorigin",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "novakidorigin.json" ]
+    }
+  ]
+}

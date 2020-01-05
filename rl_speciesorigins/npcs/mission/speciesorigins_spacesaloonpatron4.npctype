@@ -1,0 +1,47 @@
+{
+  "type" : "speciesorigins_spacesaloonpatron4",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Humorous. I saw a Glitch glow like that once - he was very ill.",
+            "Welcoming. It is a pleasure to meet you.",
+            "Awestruck. Isn't the infinite sea of stars breathtaking?",
+            "Wistful. I wish the others of my kind could appreciate it."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "industrialcrewhead" }
+          ],
+          "chest" : [
+            { "name" : "spacesuitchest" }
+          ],
+          "legs" : [
+            { "name" : "spacesuitlegs" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

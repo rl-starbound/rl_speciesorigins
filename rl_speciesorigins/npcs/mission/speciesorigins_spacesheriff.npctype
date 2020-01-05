@@ -1,0 +1,67 @@
+{
+  "type" : "speciesorigins_spacesheriff",
+  "baseType" : "base",
+
+  "npcname" : "Sheriff",
+  "identity" : {
+    "gender" : "male",
+    "hairType" : "male56",
+    "personalityIdle" : "idle.4",
+    "personalityArmIdle" : "idle.4"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "behaviorConfig": {
+      "clueChance" : 0
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Be careful out there. We're seeing more and more of these lunatics."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Leaving already, <entityname>?",
+            "Don't forget to take your checked weapon."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "pathfinderhead" }
+          ],
+          "chest" : [
+            { "name" : "pathfinderchest" }
+          ],
+          "legs" : [
+            { "name" : "pathfinderlegs" }
+          ],
+          "primary" : [
+            { "name" : "npcpistol" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

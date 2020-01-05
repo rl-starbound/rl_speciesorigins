@@ -1,0 +1,42 @@
+{
+  "type" : "speciesorigins_glitchpeasant",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "dialogMode" : "random",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Concerned. Where are you going?",
+            "Upset. Return to your post."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "peasantchest" }
+          ],
+          "legs" : [
+            { "name" : "peasantlegs" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

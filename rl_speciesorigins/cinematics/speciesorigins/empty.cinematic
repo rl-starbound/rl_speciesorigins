@@ -1,0 +1,9 @@
+{
+  "muteSfx" : false,
+  "muteMusic" : true,
+  "skippable" : false,
+  "letterbox" : false,
+  "scissor" : false,
+  "panels" : [],
+  "audio" : []
+}

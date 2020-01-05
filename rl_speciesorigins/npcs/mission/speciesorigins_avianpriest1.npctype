@@ -1,0 +1,48 @@
+{
+  "type" : "speciesorigins_avianpriest1",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Rejoice <entityname>, for your ascension is at hand.",
+            "Before this day is out, you will walk with Kluex in the Aether."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "phoenixhat", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "back" : [
+            { "name" : "guardwingsback", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "chest" : [
+            { "name" : "aviantier2chest", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "legs" : [
+            { "name" : "aviantier2pants", "parameters" : { "colorIndex" : 6 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

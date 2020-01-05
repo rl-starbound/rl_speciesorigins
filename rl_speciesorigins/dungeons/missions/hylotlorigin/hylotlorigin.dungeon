@@ -1,0 +1,22 @@
+{
+  "metadata" : {
+    "name" : "hylotlorigin",
+    "species" : "hylotl",
+    "rules" : [
+    ],
+    "anchor" : [ "hylotlorigin" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+  "parts" : [
+    {
+      "name" : "hylotlorigin",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "hylotlorigin.json" ]
+    }
+  ]
+}

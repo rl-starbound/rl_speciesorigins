@@ -1,0 +1,18 @@
+{
+  "id" : "floranorigin3",
+  "species" : "floran",
+  "title" : "A Floran's Goal",
+  "description" : "A Floran begins their life's work.",
+  "icon" : "floranorigin1.png",
+  "contentPages" : [
+    "A Floran's Goal
+
+Ssstab. Ssstab, sssmash, hunt purple warship. Find glory, make good Floran. Ssstab. Get best kill. Win all of Florans. Sssow ssseeds of vengeance. Punch all of the prey.
+
+Making friends would be nice too."
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 0
+  }
+}

@@ -1,0 +1,10 @@
+[
+  { "op" : "replace",
+    "path" : "/dialog/wakeUp/3/0",
+    "value" : "A hostile warship bombarded your home planet. As the sole survivor, you escaped in this ship."
+  },
+  { "op" : "replace",
+    "path" : "/dialog/wakeUp/4/0",
+    "value" : "The ship's navigation systems were damaged in the battle. Our location is currently unknown."
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "type" : "speciesorigins_aviandumbguard",
+  "baseType" : "devoutvillageguard",
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_speaker",
+
+    "behaviorConfig" : {
+      "clueChance" : 0,
+      "greetingChance" : 0
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "What a beautiful day for an Ascension.",
+            "...",
+            "Wait ... aren't you this cycle's Ascendant?",
+            "...",
+            "...",
+            "Well, better run along now, you don't want to keep Kluex waiting."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Greetings, <entityname>."
+          ]
+        }
+      }
+    }
+  }
+}

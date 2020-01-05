@@ -1,0 +1,88 @@
+{
+  "hylotlOriginExitBedPester" : {
+    "portraitImage" : "/ai/portraits/alt/hylotlportrait.png:talk.<frame>",
+    "senderName" : "Suzuki",
+    "text" : "You haven't much time. ^#71f2f6;Press A or D to get out of bed^white;.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginInteractPester" : {
+    "portraitImage" : "/ai/portraits/alt/hylotlportrait.png:talk.<frame>",
+    "senderName" : "Suzuki",
+    "text" : "To interact with a nearby person, door, or other object, you should ^#71f2f6;hover over it with your cursor and press E^white;.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginBeamaxePester" : {
+    "portraitImage" : "/ai/portraits/alt/hylotlportrait.png:talk.<frame>",
+    "senderName" : "Suzuki",
+    "text" : "The Matter Manipulator can be used to break through the back wall of this cavern. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the dirt to dig through it.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginDark" : {
+    "important" : true,
+    "portraitImage" : "/ai/portraits/alt/hylotlportrait.png:talk.<frame>",
+    "senderName" : "Suzuki",
+    "text" : "Use your flashlight to find your way in the dark by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginTransfer" : {
+    "text" : "Command of the ship has been transferred to you. Congratulations, Captain.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginOverrun1" : {
+    "persistTime" : 1,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Suzuki",
+    "text" : "Stand strong Kawaski! They're coming throu--",
+    "type" : "mission"
+  },
+
+  "hylotlOriginOverrun2" : {
+    "persistTime" : 3,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "???",
+    "text" : "Mesti nab disbravada, squishfish. Cutshroom! Chop!",
+    "type" : "mission"
+  },
+
+  "hylotlOriginOverrun3" : {
+    "text" : "Scans find only one Hylotl life form on the planet ... you. However, signs of fungal life are increasing.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginDropPester" : {
+    "text" : "You can drop down through a platform by ^#71f2f6;holding S to crouch on it, then tapping spacebar^white;.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginGetWeaponPester" : {
+    "important" : true,
+    "type" : "mission",
+    "text" : "Sensors indicate a weapon chest near your position. Please arm yourself!"
+  },
+
+  "hylotlOriginWeaponTutorial" : {
+    "type" : "mission",
+    "text" : "Access a weapon with ease by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it."
+  },
+
+  "hylotlOriginJumpPester" : {
+    "text" : "^#71f2f6;Use spacebar to jump^white; up to higher platforms.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginHurry" : {
+    "text" : "Sensors indicate a large mass of Agaran approaching. You might consider running faster.",
+    "type" : "mission"
+  },
+
+  "hylotlOriginChecks" : {
+    "important" : true,
+    "text" : "I have bypassed the preflight checks. Get aboard!",
+    "type" : "mission"
+  }
+}

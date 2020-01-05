@@ -1,0 +1,10 @@
+[
+  { "op" : "replace",
+    "path" : "/panels/5/text",
+    "value" : "Hello, dear! Is that a Matter Manipulator you're carrying? I pray you can help me."
+  },
+  { "op" : "replace",
+    "path" : "/panels/6/text",
+    "value" : "I'm sorry to say, you're perhaps the last who can, after the... the terrible destruction of Earth..."
+  }
+]

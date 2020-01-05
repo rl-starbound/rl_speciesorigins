@@ -1,0 +1,161 @@
+{
+  "name": "speciesorigins_stagespeaker",
+  "description": "NPC hails a player when nearby and sends the player entity a message afterward; converses when interacted, but does not wander.",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "messageContent": null,
+    "speakRange": 10
+  },
+  "root": {
+    "title": null,
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "Speak",
+        "type": "decorator",
+        "name": "cooldown",
+        "parameters": {
+          "cooldown": {"value": 2147483647}
+        },
+        "child": {
+          "title": null,
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": null,
+              "type": "action",
+              "name": "setInteractive",
+              "parameters": {
+                "interactive": {"value": false}
+              }
+            },
+            {
+              "title": null,
+              "type": "composite",
+              "name": "dynamic",
+              "parameters": {},
+              "children": [
+                {
+                  "title": null,
+                  "type": "decorator",
+                  "name": "cooldown",
+                  "parameters": {
+                    "cooldown": {"value": 0.5}
+                  },
+                  "child": {
+                    "title": null,
+                    "type": "action",
+                    "name": "queryEntity",
+                    "parameters": {
+                      "entityTypes": {"value": ["player"]},
+                      "range": {"key": "<speakRange>"}
+                    },
+                    "output": {
+                      "entity": "player"
+                    }
+                  }
+                },
+                {
+                  "title": null,
+                  "type": "action",
+                  "name": "runner",
+                  "parameters": {}
+                }
+              ]
+            },
+            {
+              "title": null,
+              "type": "action",
+              "name": "faceEntity",
+              "parameters": {
+                "entity": {"key": "player"}
+              }
+            },
+            {
+              "title": null,
+              "type": "module",
+              "name": "sequentialdialog",
+              "parameters": {
+                "dialogWaitTime": {"value": 4},
+                "dialogEndWait": {"value": 0.1},
+                "dialogKey": {"value": "dialog.speak"},
+                "dialogTarget": {"key": "player"}
+              }
+            },
+            {
+              "title": null,
+              "type": "action",
+              "name": "sendEntityMessage",
+              "parameters": {
+                "entity": {"key": "player"},
+                "message" : {"key": "<messageContent>"}
+              }
+            },
+            {
+              "title": null,
+              "type": "action",
+              "name": "setInteractive",
+              "parameters": {
+                "interactive": {"value": true}
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Converse",
+        "type": "composite",
+        "name": "sequence",
+        "parameters": {},
+        "children": [
+          {
+            "title": null,
+            "type": "action",
+            "name": "wasInteracted",
+            "parameters": {}
+          },
+          {
+            "title": null,
+            "type": "action",
+            "name": "faceEntity",
+            "parameters": {
+              "entity": {"key": "interactionSource"}
+            }
+          },
+          {
+            "title": null,
+            "type": "action",
+            "name": "sayToEntity",
+            "parameters": {
+              "dialogType": {"value": "dialog.converse"},
+              "entity": {"key": "interactionSource"}
+            }
+          },
+          {
+            "title": null,
+            "type": "action",
+            "name": "timer",
+            "parameters": {
+              "time": {"value": 1}
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

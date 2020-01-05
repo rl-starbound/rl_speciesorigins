@@ -1,0 +1,50 @@
+{
+  "id" : "avian_origin",
+  "mainQuest" : true,
+  "title" : "Spread Your Wings",
+  "text" : "Today is the day of your Ascension, the day you join Kluex in the Aether.",
+  "completionText" : "You have narrowly escaped the wrath of the Stargazers, but your ship has been damaged during your escape. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "moneyRange" : [50, 50],
+  "canBeAbandoned" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/tutorial/avian_origin.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "startingMusicTime" : 11.5,
+    "startingMusicTracks" : ["/music/desert-exploration1.ogg"],
+    "openingCinematic" : "/cinematics/avian/speciesorigins_start.cinematic",
+    "midpointMusicTracks" : ["/music/desert-battle-2.ogg"],
+    "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
+    "confiscateItems" : [
+      "brokenprotectoratebroadsword",
+      "protectorateflowerhead",
+      "tribalwingsback",
+      ["bandage", 1000],
+      ["salve", 1000],
+      ["temple2", 1000],
+      ["temple3", 1000],
+      ["bottledwater", 1000]
+    ],
+    "skipIntroItems" : [
+      "brokenprotectoratebroadsword"
+    ],
+    "postQuestItems" : [
+      "avianorigin1-codex",
+      "avianorigin2-codex",
+      "avianorigin3-codex"
+    ],
+
+    "descriptions" : {
+      "wake" : "Leap from the top of the Celestial Tower",
+      "escape" : "Escape the wrath of the Stargazers"
+    },
+
+    "followUp" : "bootship"
+  }
+}

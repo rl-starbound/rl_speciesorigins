@@ -1,0 +1,57 @@
+{
+  "type" : "speciesorigins_spacesaloonbouncer",
+  "baseType" : "base",
+
+  "npcname" : "Knuckles",
+  "identity" : {
+    "gender" : "male",
+    "hairType" : "male60",
+    "personalityIdle" : "idle.4",
+    "personalityArmIdle" : "idle.4"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "behaviorConfig" : {
+      "clueChance" : 0
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Boss says its time to settle up.",
+            "You can't leave 'til you've paid your bill."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "explorerchest" }
+          ],
+          "legs" : [
+            { "name" : "explorerlegs" }
+          ],
+          "primary" : [
+            { "name" : "npcmachinepistol" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "type" : "speciesorigins_occasusprisoner",
+  "baseType" : "base",
+
+  "identity" : {
+    "personalityIdle" : "idle.1",
+    "personalityArmIdle" : "idle.1"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_speaker",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "..."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "... alien scum ..."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "cultisthead" }
+          ],
+          "chest" : [
+            { "name" : "cultistchest" }
+          ],
+          "legs" : [
+            { "name" : "cultistlegs" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

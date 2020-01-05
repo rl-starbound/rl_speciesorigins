@@ -1,0 +1,79 @@
+{
+  "type" : "speciesorigins_suzuki2",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "npcname" : "Suzuki",
+  "identity" : {
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "41",
+    "personalityIdle" : "idle.1",
+    "personalityArmIdle" : "idle.1",
+    "personalityArmOffset" : [0, 0],
+    "personalityHeadOffset" : [0, 0],
+    "species" : "hylotl",
+    "bodyDirectives" : "?replace;a85636=4a5ba5;e0975c=758bf8;ffca8a=b5c2fa;6f2919=272665?replace;d9c189=5dd1ec;735e3a=196072;a38d59=3491aa;f7e7b2=b1f1fe?replace;dc1f00=85ccf5;951500=36627c;f32200=d4fdff;be1b00=558db2?replace;dc1f00=85ccf5;951500=36627c;f32200=d4fdff;be1b00=558db2",
+    "emoteDirectives" : "?replace;a85636=4a5ba5;e0975c=758bf8;ffca8a=b5c2fa;6f2919=272665?replace;d9c189=5dd1ec;735e3a=196072;a38d59=3491aa;f7e7b2=b1f1fe?replace;dc1f00=85ccf5;951500=36627c;f32200=d4fdff;be1b00=558db2?replace;dc1f00=85ccf5;951500=36627c;f32200=d4fdff;be1b00=558db2",
+    "hairDirectives" : "?replace;d9c189=5dd1ec;735e3a=196072;a38d59=3491aa;f7e7b2=b1f1fe?replace;dc1f00=85ccf5;951500=36627c;f32200=d4fdff;be1b00=558db2"
+  },
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male2.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_female2.ogg"
+        ]
+      }
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Go ... while you still have the chance!"
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "You must go. Kawaski and I will distract the Agaran while you escape.",
+            "You're the youngest and healthiest of us. You have the best chance to survive.",
+            "Take my most prized possession with you, my Matter Manipulator.",
+            "Yes, I was once a Protector of the Terrene Protectorate.",
+            "Perhaps one day, you will become one too. But first you must go!",
+            "Go ... and warn the universe about what happened here."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "kimonochest", "parameters" : { "colorIndex" : 940012904 } }
+          ],
+          "legs" : [
+            { "name" : "kimonolegs", "parameters" : { "colorIndex" : 2321813396 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

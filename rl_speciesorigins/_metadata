@@ -1,0 +1,7 @@
+{
+  "author" : "rl.starbound",
+  "description" : "Origins of Species adds unique origin missions for each vanilla non-human species. Despite their different origins, players of each species will find themselves stranded in space in orbit of an unknown planet with a Matter Manipulator and a Broken Protectorate Broadsword. The game is otherwise unchanged and the main quest line remains the same.\n\nFind the source code at:\nhttps://github.com/rl-starbound/rl_speciesorigins",
+  "friendlyName" : "Origins of Species",
+  "name" : "speciesorigins",
+  "version" : "1.0.0"
+}

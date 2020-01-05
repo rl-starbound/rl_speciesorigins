@@ -1,0 +1,29 @@
+{
+  "type" : "speciesorigins_aviandevoutvillager",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "behaviorConfig" : {
+      "clueChance" : 0,
+      "greetingChance" : 0
+    },
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Climb the Celestial Tower and feel the wind in your feathers!",
+            "I hope to become the next cycle's Ascendant! But I hope that every cycle...",
+            "Your family must be proud!",
+            "Kluex bless you.",
+            "May Kluex take you under his wing.",
+            "May Kluex bring you strength.",
+            "May you ascend to Kluex's side."
+          ]
+        }
+      }
+    }
+  }
+}

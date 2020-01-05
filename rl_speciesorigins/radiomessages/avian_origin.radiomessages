@@ -1,0 +1,71 @@
+{
+  "avianOriginWakeUpPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "Avian Priest",
+    "text" : "The time for your Ascension has come. ^#71f2f6;Press A or D to get out of bed^white;.",
+    "type" : "mission"
+  },
+
+  "avianOriginDropPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "To jump down from a platform like this you should ^#71f2f6;hold S to crouch then tap spacebar^white;.",
+    "type" : "mission"
+  },
+
+  "avianOriginInteractPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "To interact with a nearby person, door, or other object, you should ^#71f2f6;hover over it with your cursor and press E^white;.",
+    "type" : "mission"
+  },
+
+  "avianOriginJumpPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "^#71f2f6;Use spacebar to jump^white; up to higher platforms.",
+    "type" : "mission"
+  },
+
+  "avianOriginSail" : {
+    "text" : "This is S.A.I.L. speaking. Your friends passed your request to the Grounded and they have sent help for you.",
+    "type" : "mission"
+  },
+
+  "avianOriginSail2" : {
+    "text" : "The Grounded have a ship standing by to evacuate you. You only need to survive your leap. Good luck with that.",
+    "type" : "mission"
+  },
+
+  "avianOriginNeedBeamaxe" : {
+    "text" : "This brick wall is thin. You must find something to break through it.",
+    "type" : "mission"
+  },
+
+  "avianOriginFindBeamaxe" : {
+    "text" : "Sensors indicate a Protectorate Matter Manipulator nearby. Taking it would greatly improve your chances of survival.",
+    "type" : "mission"
+  },
+
+  "avianOriginUseBeamaxe" : {
+    "text" : "You must use the ^orange;Matter Manipulator^white; to break the bricks. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the brick wall to break through it.",
+    "type" : "mission"
+  },
+
+  "avianOriginWeapon" : {
+    "type" : "mission",
+    "text" : "The chest in that building should contain some kind of weapon. Please arm yourself!"
+  },
+
+  "avianOriginWeaponTutorial" : {
+    "important" : true,
+    "type" : "mission",
+    "text" : "Access a weapon with ease by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it."
+  },
+
+  "avianOriginChecks" : {
+    "important" : true,
+    "type" : "mission",
+    "text" : "Although this ship is not operating at peak efficiency, it is your best option for escape. Get aboard!"
+  }
+}

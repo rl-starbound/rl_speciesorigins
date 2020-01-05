@@ -1,0 +1,130 @@
+{
+  "margin" : 0,
+  "name" : "objects-by-race/speciesorigins",
+  "properties" :  {
+  },
+  "spacing" : 0,
+  "tilecount" : 10,
+  "tileheight" : 8,
+  "tileproperties" : {
+    "0" : {
+      "//description" : "This Matter Manipulator was meant for me... And I may need it to get out of here alive.",
+      "//name" : "apexbeamaxe",
+      "//shortdescription" : "Matter Manipulator (Apex)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "apexbeamaxe",
+      "tilesetDirection" : "right"
+    },
+    "1" : {
+      "//description" : "This Matter Manipulator was meant for me... And I may need it to get out of here alive.",
+      "//name" : "avianbeamaxe",
+      "//shortdescription" : "Matter Manipulator (Avian)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "avianbeamaxe",
+      "tilesetDirection" : "right"
+    },
+    "2" : {
+      "//description" : "This Matter Manipulator was meant for me... And I may need it to get out of here alive.",
+      "//name" : "floranbeamaxe",
+      "//shortdescription" : "Matter Manipulator (Floran)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "floranbeamaxe",
+      "tilesetDirection" : "right"
+    },
+    "3" : {
+      "//description" : "This Matter Manipulator was meant for me... And I may need it to get out of here alive.",
+      "//name" : "glitchbeamaxe",
+      "//shortdescription" : "Matter Manipulator (Glitch)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "glitchbeamaxe",
+      "tilesetDirection" : "right"
+    },
+    "4" : {
+      "//description" : "This Matter Manipulator was meant for me... And I may need it to get out of here alive.",
+      "//name" : "hylotlbeamaxe",
+      "//shortdescription" : "Matter Manipulator (Hylotl)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "hylotlbeamaxe",
+      "tilesetDirection" : "right"
+    },
+    "5" : {
+      "//description" : "This Matter Manipulator was meant for me... And I may need it to get out of here alive.",
+      "//name" : "novakidbeamaxe",
+      "//shortdescription" : "Matter Manipulator (Novakid)",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "novakidbeamaxe",
+      "tilesetDirection" : "right"
+    },
+    "6" : {
+      "//description" : "This was formerly an agent of the Miniknog.",
+      "//name" : "originsbodyapex",
+      "//shortdescription" : "Apex Miniknog Body",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "originsbodyapex"
+    },
+    "7" : {
+      "//description" : "A Floran...",
+      "//name" : "originsbodyfloran",
+      "//shortdescription" : "Floran Body",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "originsbodyfloran"
+    },
+    "8" : {
+      "//description" : "This was formerly a Glitch Dark Knight.",
+      "//name" : "originsbodyglitch",
+      "//shortdescription" : "Glitch Dark Knight Body",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "originsbodyglitch"
+    },
+    "9" : {
+      "//description" : "A Hylotl...",
+      "//name" : "originsbodyhylotl",
+      "//shortdescription" : "Hylotl Body",
+      "imagePositionX" : "-8",
+      "imagePositionY" : "0",
+      "object" : "originsbodyhylotl"
+    }
+  },
+  "tiles" : {
+    "0" : {
+      "image" : "../../../_tiled/packed/objects/apexbeamaxe.png"
+    },
+    "1" : {
+      "image" : "../../../_tiled/packed/objects/avianbeamaxe.png"
+    },
+    "2" : {
+      "image" : "../../../_tiled/packed/objects/floranbeamaxe.png"
+    },
+    "3" : {
+      "image" : "../../../_tiled/packed/objects/glitchbeamaxe.png"
+    },
+    "4" : {
+      "image" : "../../../_tiled/packed/objects/hylotlbeamaxe.png"
+    },
+    "5" : {
+      "image" : "../../../_tiled/packed/objects/novakidbeamaxe.png"
+    },
+    "6" : {
+      "image" : "../../../_tiled/packed/objects/originsbodyapex.png"
+    },
+    "7" : {
+      "image" : "../../../_tiled/packed/objects/originsbodyfloran.png"
+    },
+    "8" : {
+      "image" : "../../../_tiled/packed/objects/originsbodyglitch.png"
+    },
+    "9" : {
+      "image" : "../../../_tiled/packed/objects/originsbodyhylotl.png"
+    }
+  },
+  "tilewidth" : 8
+}

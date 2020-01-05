@@ -1,0 +1,30 @@
+{
+  "type" : "speciesorigins_aviandevoutvillager2",
+  "baseType" : "villager",
+
+  "scriptConfig" : {
+    "behavior": "avianorigindevout",
+
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Guards! <entityname> is fleeing!"
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "<entityname>? But, you were supposed to Ascend!",
+            "<entityname>! Think of your family! Return to the Celestial Tower at once!",
+            "Apostate! Guards, help!",
+            "Guards! <entityname> is fleeing!",
+            "Kluex cannot forgive apostasy!",
+            "Why would you betray Kluex like this?"
+          ]
+        }
+      }
+    }
+  }
+}

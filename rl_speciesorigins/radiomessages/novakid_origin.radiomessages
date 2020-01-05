@@ -1,0 +1,76 @@
+{
+  "novakidOriginGetUpPester" : {
+    "text" : "You've dined, now it's time to dash! ^#71f2f6;Press A or D to get out of the chair^white;.",
+    "type" : "mission"
+  },
+
+  "novakidOriginInteractPester" : {
+    "text" : "To interact with a nearby person, door, or other object, you should ^#71f2f6;hover over it with your cursor and press E^white;.",
+    "type" : "mission"
+  },
+
+  "novakidOriginBill" : {
+    "important" : true,
+    "text" : "You won't be able to leave through the front door. Perhaps there is a back door in the kitchen.",
+    "type" : "mission"
+  },
+
+  "novakidOriginDropPester" : {
+    "text" : "Try exploring the basement. When standing on the kitchen stairs, drop down through the platform by ^#71f2f6;holding S to crouch, then tapping spacebar^white;.",
+    "type" : "mission"
+  },
+
+  "novakidOriginGrate" : {
+    "important" : true,
+    "text" : "Those iron bars look weak. Now to find something that could break them...",
+    "type" : "mission"
+  },
+
+  "novakidOriginShelfPester" : {
+    "text" : "Odd. That bookshelf seems out of place in this office...",
+    "type" : "mission"
+  },
+
+  "novakidOriginTreasure" : {
+    "important" : true,
+    "text" : "A ^orange;Matter Manipulator^white;! That will make short work of those iron bars.",
+    "type" : "mission"
+  },
+
+  "novakidOriginMMPester" : {
+    "text" : "Use the ^orange;Matter Manipulator^white; to remove the heavy iron bars. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the heavy iron bars to break them.",
+    "type" : "mission"
+  },
+
+  "novakidOriginChoices" : {
+    "text" : "While you step through ... that ... perhaps you will take this opportunity to reflect on your life choices.",
+    "type" : "mission"
+  },
+
+  "novakidOriginClimbPester" : {
+    "text" : "^#71f2f6;Use spacebar to jump^white; up the platforms of the sewer shaft.",
+    "type" : "mission"
+  },
+
+  "novakidOriginNoReturn" : {
+    "text" : "I would not advise returning to this establishment. I'll add it to the list of places we're no longer welcome.",
+    "type" : "mission"
+  },
+
+  "novakidOriginWeaponTutorial" : {
+    "text" : "Access a weapon with ease by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it.",
+    "type" : "mission"
+  },
+
+  "novakidOriginRepairs" : {
+    "important" : true,
+    "text" : "The ship is in Dock 2. It is badly in need of repairs, but no one here has the expertise to do the job.",
+    "type" : "mission"
+  },
+
+  "novakidOriginChecks" : {
+    "important" : true,
+    "text" : "The preflight checks failed, so I bypassed them. Get aboard!",
+    "type" : "mission"
+  }
+}

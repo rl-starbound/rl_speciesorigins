@@ -1,0 +1,49 @@
+{
+  "type" : "speciesorigins_spacesaloonpatron3",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hello, sun being!",
+            "I haven't seen a Novakid in quite some time!",
+            "You know, devout Avians believe your kind was sent to us by Kluex.",
+            "They'll sometimes even try to capture you to seal you in their tombs!",
+            "But don't worry, I'm not one of them!",
+            "Safe travels!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "industrialcrewhead" }
+          ],
+          "chest" : [
+            { "name" : "spacesuitchest" }
+          ],
+          "legs" : [
+            { "name" : "spacesuitlegs" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

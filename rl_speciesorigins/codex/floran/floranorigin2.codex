@@ -1,0 +1,18 @@
+{
+  "id" : "floranorigin2",
+  "species" : "floran",
+  "title" : "Floran Origins",
+  "description" : "Do Florans dream of electric lights?",
+  "icon" : "floranorigin1.png",
+  "contentPages" : [
+    "A Floran Introduction
+
+Floran forget. At night, Floran dream of oaken sssoldiers, of ssslimy demons, burning hot fire. In dry grass, beneath crashing waves, memories hazy. Do Floran forget, or remember?
+
+Floran do know hunt. Kill or be killed. Fight, sssurvive, destroy. Floran not remember much. Greenfinger help. But Floran know one thing. Ssstab ssstab ssstab."
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 0
+  }
+}

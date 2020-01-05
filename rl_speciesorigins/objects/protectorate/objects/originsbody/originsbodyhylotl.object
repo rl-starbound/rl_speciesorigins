@@ -1,0 +1,31 @@
+{
+  "objectName" : "originsbodyhylotl",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+  "printable" : false,
+
+  "description" : "A Hylotl...",
+  "shortdescription" : "Hylotl Body",
+  "race" : "hylotl",
+
+  "apexDescription" : "I don't want to look...",
+  "avianDescription" : "Good lord...",
+  "floranDescription" : "So sssad...",
+  "glitchDescription" : "Devastated. I have no words...",
+  "humanDescription" : "I'm so sorry...",
+  "hylotlDescription" : "I can't look...",
+  "novakidDescription" : "No! This can't be happenin'...",
+
+  "inventoryIcon" : "originsbodyicon.png",
+  "orientations" : [
+    {
+      "image" : "originsbodyhylotl.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

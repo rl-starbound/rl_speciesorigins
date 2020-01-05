@@ -1,0 +1,87 @@
+{
+  "glitchOriginGetUpPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "Restless. Why not stand up? Instructive. ^#71f2f6;Press A or D to get out of the chair^white;.",
+    "type" : "mission"
+  },
+
+  "glitchOriginSevered" : {
+    "important" : true,
+    "text" : "This is S.A.I.L. speaking. We have detected that you have attained self-awareness and are on our way to aid you.",
+    "type" : "mission"
+  },
+
+  "glitchOriginDoorPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "Instructive. To interact with a nearby person, door, or other object, you should ^#71f2f6;hover over it with your cursor and press E^white;.",
+    "type" : "mission"
+  },
+
+  "glitchOriginKitchen" : {
+    "important" : true,
+    "text" : "Make your way to the balcony above so that we can beam you out.",
+    "type" : "mission"
+  },
+
+  "glitchOriginStairPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "Instructive. ^#71f2f6;Use spacebar to jump^white; up to higher platforms.",
+    "type" : "mission"
+  },
+
+  "glitchOriginWarning" : {
+    "important" : true,
+    "text" : "Be cautious interacting with other Glitch. Those who are not self-aware may feel threatened by your awakening.",
+    "type" : "mission"
+  },
+
+  "glitchOriginGetWeapon" : {
+    "text" : "The chest should contain some kind of weapon. Arm yourself!",
+    "type" : "mission"
+  },
+
+  "glitchOriginWeaponTutorial" : {
+    "important" : true,
+    "text" : "Access a weapon with ease by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it.",
+    "type" : "mission"
+  },
+
+  "glitchOriginDropDownPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "You",
+    "text" : "Instructive. To jump down from a platform you should ^#71f2f6;hold S to crouch then tap spacebar^white;.",
+    "type" : "mission"
+  },
+
+  "glitchOriginBeamaxe" : {
+    "important" : true,
+    "text" : "This ^orange;Matter Manipulator^white; will allow you to shape the world around you. In particular, it should be useful to tunnel through the gravel beneath the fortress's outer wall.",
+    "type" : "mission"
+  },
+
+  "glitchOriginBeamaxeDig" : {
+    "text" : "You must use the ^orange;Matter Manipulator^white; to remove the gravel. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the gravel to dig through it.",
+    "type" : "mission"
+  },
+
+  "glitchOriginWizardTaunt" : {
+    "portraitImage" : "/ai/portraits/alt/glitchportrait.png:yell.<frame>",
+    "senderName" : "Evil Mage",
+    "text" : "Taunting. Your friend was no match for us. Imperative. Surrender now! Intimidating. There is no place on this planet you can hide from us!",
+    "type" : "mission"
+  },
+
+  "glitchOriginRun" : {
+    "text" : "Sensors indicate a large number of Glitch approaching. There is a 98% chance they are hostile. I recommend running.",
+    "type" : "mission"
+  },
+
+  "glitchOriginChecks" : {
+    "important" : true,
+    "text" : "Although the ship is not operating at maximum efficiency, it is your best option for escape. Get aboard!",
+    "type" : "mission"
+  }
+}

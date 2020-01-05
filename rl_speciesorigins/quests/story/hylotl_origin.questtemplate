@@ -1,0 +1,55 @@
+{
+  "id" : "hylotl_origin",
+  "mainQuest" : true,
+  "title" : "Fish Out Of Water",
+  "text" : "You embark on a mission of peace.",
+  "completionText" : "You are the sole survivor of a doomed mission. You must return to civilization to speak of what you witnessed, but your ship has been damaged. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "moneyRange" : [50, 50],
+  "canBeAbandoned" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/tutorial/hylotl_origin.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "startingMusicTime" : 0.1,
+    "startingMusicTracks" : ["/music/the-deep.ogg"],
+    "openingCinematic" : "/cinematics/hylotl/speciesorigins_start.cinematic",
+    "midpointMusicTime" : 52,
+    "midpointMusicTracks" : ["/music/ocean-battle1-loop.ogg"],
+    "midpointCinematic" : "/cinematics/hylotl/speciesorigins_midpoint.cinematic",
+    "midpointTeleportPosition" : [600, 700],
+    "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
+    "confiscateItems" : [
+      "brokenprotectoratebroadsword",
+      "flashlight",
+      "protectorateflowerhead",
+      ["salve", 1000],
+      ["bandage", 1000],
+      ["cobblestonematerial", 1000],
+      ["dirtmaterial", 1000],
+      ["bottledwater", 1000]
+    ],
+    "skipIntroItems" : [
+      "brokenprotectoratebroadsword"
+    ],
+    "postQuestItems" : [
+      "hylotlorigin1-codex",
+      "hylotlorigin2-codex",
+      "hylotlorigin3-codex"
+    ],
+
+    "descriptions" : {
+      "explore" : "Explore your surroundings",
+      "sleep" : "Rest for the evening",
+      "matterManipulator" : "Take the matter manipulator",
+      "escape" : "Don't stop running"
+    },
+
+    "followUp" : "bootship"
+  }
+}

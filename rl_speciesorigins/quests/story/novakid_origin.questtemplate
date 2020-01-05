@@ -1,0 +1,49 @@
+{
+  "id" : "novakid_origin",
+  "mainQuest" : true,
+  "title" : "Dine And Dash",
+  "text" : "You seem to have left your wallet in your other clothes. You'll have to find a way off this rock without forfeiting your ship.",
+  "completionText" : "You've made it off the station, but your ship has broken down. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "moneyRange" : [50, 50],
+  "canBeAbandoned" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/tutorial/novakid_origin.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "startingMusicTime" : 16,
+    "startingMusicTracks" : ["/music/i-was-the-sun.ogg"],
+    "openingCinematic" : "/cinematics/novakid/speciesorigins_start.cinematic",
+    "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
+    "confiscateItems" : [
+      "brokenprotectoratebroadsword",
+      "protectorateflowerhead",
+      ["bandage", 1000],
+      ["salve", 1000],
+      ["heavyironbars", 1000],
+      ["outpostwall2", 1000],
+      ["bottledwater", 1000]
+    ],
+    "skipIntroItems" : [
+      "brokenprotectoratebroadsword"
+    ],
+    "postQuestItems" : [
+      "novakidorigin1-codex",
+      "novakidorigin2-codex",
+      "novakidorigin3-codex"
+    ],
+
+    "descriptions" : {
+      "wake" : "Dine and dash",
+      "matterManipulator" : "Take the matter manipulator",
+      "escape" : "Get outta Dodge"
+    },
+
+    "followUp" : "bootship"
+  }
+}

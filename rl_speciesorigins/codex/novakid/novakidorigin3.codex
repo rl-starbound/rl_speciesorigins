@@ -1,0 +1,18 @@
+{
+  "id" : "novakidorigin3",
+  "title" : "Novakid To-Do List",
+  "description" : "A list of a Novakid's daily goals.",
+  "icon" : "novakidorigin1.png",
+  "contentPages" : [
+    "To-Do
+
+* Hunt varmints
+* Dispatch Mooshi rustlers
+* Hoedown at the saloon
+* Maybe figure out my people's origins"
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 0
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "type" : "speciesorigins_apexrescuer",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "identity" : {
+    "gender" : "female",
+    "facialHairGroup" : "beardfemale",
+    "facialHairType" : "12",
+    "personalityIdle" : "idle.4",
+    "personalityArmIdle" : "idle.4",
+    "bodyDirectives" : "?replace;a85636=5d3e25;e0975c=7e5938;6f2919=422a18?replace;d9c189=e5b078;735e3a=a66c46;a38d59=bb8c5e;f7e7b2=f0d6b9",
+    "emoteDirectives" : "?replace;a85636=5d3e25;e0975c=7e5938;6f2919=422a18?replace;d9c189=e5b078;735e3a=a66c46;a38d59=bb8c5e;f7e7b2=f0d6b9",
+    "facialHairDirectives" : "?replace;a85636=5d3e25;e0975c=7e5938;6f2919=422a18",
+    "hairDirectives" : "?replace;a85636=5d3e25;e0975c=7e5938;6f2919=422a18"
+  },
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female1.ogg"
+        ]
+      }
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "I need to know what they're doing here."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Greetings, comrade! I'm here to rescue you.",
+            "I have a scout ship waiting on the surface.",
+            "Take this earpiece; it'll let us communicate discreetly.",
+            "I've disabled the security cameras, but the guards will notice eventually.",
+            "We may have only a few minutes to make our escape, so no monkeying around.",
+            "Go on! I'll follow you after hacking the Miniknog network."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "visorhead" }
+          ],
+          "chest" : [
+            { "name" : "miniknogchest" }
+          ],
+          "legs" : [
+            { "name" : "miniknogpants" }
+          ],
+          "primary" : [
+            "ironassaultrifle"
+          ]
+        }
+      ] ]
+    ]
+  }
+}

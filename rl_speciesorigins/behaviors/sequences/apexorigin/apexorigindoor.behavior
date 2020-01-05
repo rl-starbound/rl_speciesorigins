@@ -1,0 +1,194 @@
+{
+  "name": "apexorigindoor",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/position.lua",
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/status.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": null,
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "WaitForPlayer",
+        "type": "composite",
+        "name": "dynamic",
+        "parameters": {},
+        "children": [
+          {
+            "title": null,
+            "type": "decorator",
+            "name": "cooldown",
+            "parameters": {
+              "cooldown": {"value": 0.5}
+            },
+            "child": {
+              "title": null,
+              "type": "action",
+              "name": "queryEntity",
+              "parameters": {
+                "entityTypes": {"value": ["player"]},
+                "range": {"value": 5}
+              },
+              "output": {
+                "entity": "player"
+              }
+            }
+          },
+          {
+            "title": null,
+            "type": "action",
+            "name": "runner",
+            "parameters": {}
+          }
+        ]
+      },
+      {
+        "title": "FindComputer",
+        "type": "action",
+        "name": "findObject",
+        "parameters": {
+          "name": {"value": "apexcoolcomputer"},
+          "range": {"value": 25}
+        },
+        "output": {
+          "entity": "computer"
+        }
+      },
+      {
+        "title": "FacePlayer",
+        "type": "action",
+        "name": "faceEntity",
+        "parameters": {
+          "entity": {"key": "player"}
+        }
+      },
+      {
+        "title": null,
+        "type": "module",
+        "name": "sequentialdialog",
+        "parameters": {
+          "dialogWaitTime": {"value": 4},
+          "dialogEndWait": {"value": 4},
+          "dialogKey": {"value": "dialog.speak"},
+          "dialogTarget": {"key": "player"}
+        }
+      },
+      {
+        "title": "OpenCellDoor",
+        "type": "action",
+        "name": "sendEntityMessage",
+        "parameters": {
+          "entity": {"key": "player"},
+          "message" : {"value": "openCellDoor"}
+        }
+      },
+      {
+        "title": null,
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.25}
+        }
+      },
+      {
+        "title": null,
+        "type": "action",
+        "name": "sayToEntity",
+        "parameters": {
+          "dialogType": {"value": "dialog.converse"},
+          "entity": {"key": "player"}
+        }
+      },
+      {
+        "title": null,
+        "type": "action",
+        "name": "timer",
+        "parameters": {
+          "time": {"value": 0.25}
+        }
+      },
+      {
+        "title": null,
+        "type": "action",
+        "name": "offsetPosition",
+        "parameters": {
+          "offset": {"value": [15, -6]},
+          "position": {"key": "spawn"}
+        },
+        "output": {
+          "position": "endposition"
+        }
+      },
+      {
+        "title": null,
+        "type": "action",
+        "name": "moveToPosition",
+        "parameters": {
+          "position": {"key": "endposition"}
+        },
+        "output": {}
+      },
+      {
+        "title": "FaceComputer",
+        "type": "action",
+        "name": "faceEntity",
+        "parameters": {
+          "entity": {"key": "computer"}
+        }
+      },
+      {
+        "title": "InfiniteLoop",
+        "type": "composite",
+        "name": "parallel",
+        "parameters": {
+          "fail": {"value": -1},
+          "success": {"value": -1}
+        },
+        "children": [
+          {
+            "title": "HackComputer",
+            "type": "decorator",
+            "name": "repeater",
+            "parameters": {
+              "maxLoops": {"value": -1},
+              "untilSuccess": {"value": false}
+            },
+            "child": {
+              "title": null,
+              "type": "composite",
+              "name": "sequence",
+              "parameters": {},
+              "children": [
+                {
+                  "title": null,
+                  "type": "action",
+                  "name": "dance",
+                  "parameters": {
+                    "dance": {"value": "typing"}
+                  }
+                },
+                {
+                  "title": null,
+                  "type": "action",
+                  "name": "timer",
+                  "parameters": {
+                    "time": {"value": 2}
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

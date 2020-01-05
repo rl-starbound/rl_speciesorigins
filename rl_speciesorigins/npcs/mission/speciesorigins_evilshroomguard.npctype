@@ -1,0 +1,55 @@
+{
+  "type" : "speciesorigins_evilshroomguard",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "behaviorConfig" : {
+      "clueChance" : 0
+    },
+
+    "dialogMode" : "random",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hoom! Feesle the mushroom habito!"
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Huh huh hoom? Squishfish...",
+            "Nab! Nab!",
+            "Nab halb smashroom, squishfish! Cantara nab house, chop!",
+            "Kissface plant nab cutshroom, squishfish. Threaten!",
+            "Squeak. Hoom nab.",
+            "Hoom. Mesti nab disbravada, squishfish.",
+            "Nabnabnabnabnabnab.",
+            "Nab house, squishfish! Nab nab nab."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [ { "name" : "shroomhead" }, { "name" : "shroomhead2" }, { "name" : "shroomhead3" }, { "name" : "shroomhead4" } ],
+            "chest" : [ { "name" : "florantier2chest" } ],
+            "legs" : [ { "name" : "florantier2pants" } ],
+            "primary" : [
+              "npcbroadsword"
+            ]
+          }
+        ] ]
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "name": "speciesorigins_speaker",
+  "description": "NPC hails a player when nearby and converses when interacted, but does not wander.",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "clueChance": 0,
+    "speakCooldown": 300,
+    "speakRange": 10
+  },
+  "root": {
+    "title": null,
+    "type": "composite",
+    "name": "dynamic",
+    "parameters": {},
+    "children": [
+      {
+        "title": null,
+        "type": "decorator",
+        "name": "cooldown",
+        "parameters": {
+          "cooldown": {"key": "<speakCooldown>"}
+        },
+        "child": {
+          "title": null,
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": null,
+              "type": "decorator",
+              "name": "cooldown",
+              "parameters": {
+                "cooldown": {"value": 0.5},
+                "onFail": {"value": true}
+              },
+              "child": {
+                "title": null,
+                "type": "action",
+                "name": "queryEntity",
+                "parameters": {
+                  "entityTypes": {"value": ["player"]},
+                  "range": {"key": "<speakRange>"}
+                },
+                "output": {
+                  "entity": "player"
+                }
+              }
+            },
+            {
+              "title": null,
+              "type": "decorator",
+              "name": "succeeder",
+              "parameters": {},
+              "child": {
+                "title": null,
+                "type": "composite",
+                "name": "sequence",
+                "parameters": {},
+                "children": [
+                  {
+                    "title": null,
+                    "type": "action",
+                    "name": "faceEntity",
+                    "parameters": {
+                      "entity": {"key": "player"}
+                    }
+                  },
+                  {
+                    "title": null,
+                    "type": "action",
+                    "name": "sayToEntity",
+                    "parameters": {
+                      "dialogType": {"value": "dialog.speak"},
+                      "entity": {"key": "player"}
+                    }
+                  },
+                  {
+                    "title": null,
+                    "type": "action",
+                    "name": "timer",
+                    "parameters": {
+                      "time": {"value": 0.75}
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": null,
+        "type": "module",
+        "name": "converse",
+        "parameters": {
+          "clueChance": {"key": "<clueChance>"}
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "type" : "speciesorigins_glitchchef",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "simple",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Exasperated. Why are you in my kitchen?",
+            "Annoyed. Get back to your post in the dining room!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "chefhead" }
+          ],
+          "chest" : [
+            { "name" : "chefchest" }
+          ],
+          "legs" : [
+            { "name" : "cheflegs" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

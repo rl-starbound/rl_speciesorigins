@@ -1,0 +1,49 @@
+{
+  "id" : "floran_origin",
+  "mainQuest" : true,
+  "title" : "World On Fire",
+  "text" : "You wake to your village burning. Will you survive?",
+  "completionText" : "A surprise attack by a purple warship burned your home world. You escaped in a damaged Floran ship. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "moneyRange" : [50, 50],
+  "canBeAbandoned" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/tutorial/floran_origin.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "startingMusicTime" : 11.5,
+    "startingMusicTracks" : ["/music/event-horizon.ogg"],
+    "openingCinematic" : "/cinematics/floran/speciesorigins_start.cinematic",
+    "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
+    "confiscateItems" : [
+      "brokenprotectoratebroadsword",
+      "protectorateflowerhead",
+      "raggedprotectoratecape",
+      ["salve", 1000],
+      ["bandage", 1000],
+      ["dirtmaterial", 1000],
+      ["wetdirt", 1000],
+      ["bottledwater", 1000]
+    ],
+    "skipIntroItems" : [
+      "brokenprotectoratebroadsword"
+    ],
+    "postQuestItems" : [
+      "floranorigin1-codex",
+      "floranorigin2-codex",
+      "floranorigin3-codex"
+    ],
+
+    "descriptions" : {
+      "burning" : "You smell something burning",
+      "investigate": "Investigate the crash site"
+    },
+
+    "followUp" : "bootship"
+  }
+}

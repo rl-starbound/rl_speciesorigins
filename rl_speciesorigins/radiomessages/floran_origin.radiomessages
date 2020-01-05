@@ -1,0 +1,78 @@
+{
+  "floranOriginExitBedPester" : {
+    "portraitImage" : "yell.<frame>",
+    "text" : "Wake up! Your home is burning! ^#71f2f6;Press A or D to get out of bed^white;.",
+    "type" : "mission"
+  },
+
+  "floranOriginReason" : {
+    "important" : true,
+    "text" : "Logs indicate that a purple warship of unknown configuration destroyed the Floran fleet above this planet and then began bombarding the surface.",
+    "type" : "mission"
+  },
+
+  "floranOriginStairsPester" : {
+    "text" : "I advise that you escape by ^#71f2f6;using spacebar to jump^white; up to higher platforms.",
+    "type" : "mission"
+  },
+
+  "floranOriginInvestigate" : {
+    "important" : true,
+    "text" : "One Floran ship has survived a crash landing nearby and appears space-worthy. I recommend you investigate it.",
+    "type" : "mission"
+  },
+
+  "floranOriginDoorPester" : {
+    "text" : "Open the door and pass through the burning building! To interact with a nearby person, door, or other object, ^#71f2f6;hover over it with your cursor and press E^white;.",
+    "type" : "mission"
+  },
+
+  "floranOriginMotivator" : {
+    "important" : true,
+    "text" : "The scale of the devastation is incredible. You appear to be the only survivor. I recommend trying to use the downed ship to escape this planet.",
+    "type" : "mission"
+  },
+
+  "floranOriginBlocked" : {
+    "text" : "The fire ahead is too intense to pass. You should try to escape through the tunnels below.",
+    "type" : "mission"
+  },
+
+  "floranOriginDropDownPester" : {
+    "text" : "To drop down from a platform, ^#71f2f6;hold S to crouch then tap spacebar^white;.",
+    "type" : "mission"
+  },
+
+  "floranOriginSearch" : {
+    "text" : "Sensors indicate a hollow space linking this hut to the next. Perhaps your village's greenfinger hid it for some reason. Search this room.",
+    "type" : "mission"
+  },
+
+  "floranOriginTakeBeamaxe" : {
+    "important" : true,
+    "text" : "It seems that this village once sheltered a Protector. Taking that ^orange;Matter Manipulator^white; will dramatically increase your chances of survival.",
+    "type" : "mission"
+  },
+
+  "floranOriginDig" : {
+    "text" : "The dirt wall in the upper level of this hut is loose. The Matter Manipulator can be used to tunnel through it. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the dirt to dig.",
+    "type" : "mission"
+  },
+
+  "floranOriginCrater" : {
+    "important" : true,
+    "text" : "Sensors indicate a weapon chest was ejected during the crash. Open it, take anything inside, then board the ship!",
+    "type" : "mission"
+  },
+
+  "floranOriginWeaponTutorial" : {
+    "text" : "Access a weapon with ease by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it.",
+    "type" : "mission"
+  },
+
+  "floranOriginChecks" : {
+    "important" : true,
+    "text" : "The preflight checks failed, so I bypassed them. There is a 52% chance we will survive liftoff. Get aboard!",
+    "type" : "mission"
+  }
+}

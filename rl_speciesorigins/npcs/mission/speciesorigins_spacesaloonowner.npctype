@@ -1,0 +1,63 @@
+{
+  "type" : "speciesorigins_spacesaloonowner",
+  "baseType" : "base",
+
+  "npcname" : "Angelo",
+  "identity" : {
+    "gender" : "male",
+    "hairType" : "male14",
+    "personalityIdle" : "idle.2",
+    "personalityArmIdle" : "idle.2"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "behaviorConfig" : {
+      "clueChance" : 0
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "If you don't have the pixels, I could accept the deed to your ship."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Whoa there, <entityname>. Forgetting something?",
+            "You owe this establishment a substantial sum.",
+            "I'm afraid I can't extend you another line of credit.",
+            "Payment is due before you leave."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "moneybagschest" }
+          ],
+          "legs" : [
+            { "name" : "moneybagspants" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

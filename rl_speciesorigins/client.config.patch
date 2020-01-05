@@ -1,0 +1,6 @@
+[
+  { "op" : "replace",
+    "path" : "/introCinematic",
+    "value" : "/cinematics/speciesorigins/empty.cinematic"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  { "op" : "add",
+    "path" : "/initialquests/glitch",
+    "value" : [ "glitch_origin" ]
+  },
+  { "op" : "add",
+    "path" : "/initialquests/avian",
+    "value" : [ "avian_origin" ]
+  },
+  { "op" : "add",
+    "path" : "/initialquests/apex",
+    "value" : [ "apex_origin" ]
+  },
+  { "op" : "add",
+    "path" : "/initialquests/floran",
+    "value" : [ "floran_origin" ]
+  },
+  { "op" : "add",
+    "path" : "/initialquests/hylotl",
+    "value" : [ "hylotl_origin" ]
+  },
+  { "op" : "add",
+    "path" : "/initialquests/novakid",
+    "value" : [ "novakid_origin" ]
+  }
+]

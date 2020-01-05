@@ -1,0 +1,31 @@
+{
+  "objectName" : "originsbodyglitch",
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 0,
+  "printable" : false,
+
+  "description" : "This was formerly a Glitch Dark Knight.",
+  "shortdescription" : "Glitch Dark Knight Body",
+  "race" : "glitch",
+
+  "apexDescription" : "...",
+  "avianDescription" : "...",
+  "floranDescription" : "...",
+  "glitchDescription" : "Regretful. Why did you make us do this...",
+  "humanDescription" : "...",
+  "hylotlDescription" : "...",
+  "novakidDescription" : "...",
+
+  "inventoryIcon" : "originsbodyicon.png",
+  "orientations" : [
+    {
+      "image" : "originsbodyglitch.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1
+    }
+  ]
+}

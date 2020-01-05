@@ -1,0 +1,132 @@
+{
+  "name": "apexoriginexpositiongreenfinger",
+  "description": "The shadowy greenfinger speaks once when the player approaches, then notifies Doctor Lax.",
+  "scripts": [
+    "/scripts/actions/position.lua",
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/actions/notification.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "InfiniteLoop",
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "DoOnce",
+        "type": "decorator",
+        "name": "cooldown",
+        "parameters": {
+          "cooldown": {"value": 2147483647}
+        },
+        "child": {
+          "title": "Speak",
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": "WaitForPlayer",
+              "type": "composite",
+              "name": "dynamic",
+              "parameters": {},
+              "children": [
+                {
+                  "title": null,
+                  "type": "decorator",
+                  "name": "cooldown",
+                  "parameters": {
+                    "cooldown": {"value": 0.5}
+                  },
+                  "child": {
+                    "title": null,
+                    "type": "action",
+                    "name": "queryEntity",
+                    "parameters": {
+                      "entityTypes": {"value": ["player"]},
+                      "range": {"value": 15}
+                    },
+                    "output": {
+                      "entity": "player"
+                    }
+                  }
+                },
+                {
+                  "title": null,
+                  "type": "action",
+                  "name": "runner",
+                  "parameters": {}
+                }
+              ]
+            },
+            {
+              "title": "FindDoctorLax",
+              "type": "action",
+              "name": "queryEntity",
+              "parameters": {
+                "entityTypes": {"value": ["npc"]},
+                "range": {"value": 5}
+              },
+              "output": {
+                "entity": "doctorlax"
+              }
+            },
+            {
+              "title": "FaceDoctorLax",
+              "type": "action",
+              "name": "faceEntity",
+              "parameters": {
+                "entity": {"key": "doctorlax"}
+              }
+            },
+            {
+              "title": null,
+              "type": "module",
+              "name": "sequentialdialog",
+              "parameters": {
+                "dialogWaitTime": {"value": 4},
+                "dialogEndWait": {"value": 0.1},
+                "dialogKey": {"value": "dialog.speak"},
+                "dialogTarget": {"key": "player"}
+              }
+            },
+            {
+              "title": "NotifyDoctorLax",
+              "type": "composite",
+              "name": "dynamic",
+              "parameters": {},
+              "children": [
+                {
+                  "title": null,
+                  "type": "action",
+                  "name": "broadcastNotification",
+                  "parameters": {
+                    "entityTypes": {"value": ["npc"]},
+                    "position": {"key": "self"},
+                    "range": {"value": 10},
+                    "type": {"value": "greenfingerspoke"}
+                  }
+                },
+                {
+                  "title": "runner",
+                  "type": "action",
+                  "name": "runner",
+                  "parameters": {}
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

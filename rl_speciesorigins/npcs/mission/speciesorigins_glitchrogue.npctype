@@ -1,0 +1,82 @@
+{
+  "type" : "speciesorigins_glitchrogue",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "npcname" : "Rogue",
+  "identity" : {
+    "personalityIdle" : "idle.4",
+    "personalityArmIdle" : "idle.4"
+  },
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/glitch_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/glitch_chatter_female1.ogg"
+        ]
+      }
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Exasperated. You should be escaping now!"
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Cautionary. An alarm has been raised and the guards have closed the gates.",
+            "Motivating. Arm yourself with a weapon and make your escape.",
+            "Expository. The base of the east gate is weak.",
+            "Presumptive. Find something in this tower that can help you tunnel under it.",
+            "Informative. My ship is in a clearing beyond the gate.",
+            "Helpful. I have already linked you to S.A.I.L.",
+            "Apologetic. I am not coming with you.",
+            "Determined. I have unfinished business with the mage.",
+            "Hopeful. Farewell."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "rainbowhoodhead" }
+          ],
+          "chest" : [
+            { "name" : "glitchtier2chest", "parameters" : { "colorIndex" : 3 } }
+          ],
+          "legs" : [
+            { "name" : "glitchtier2pants", "parameters" : { "colorIndex" : 3 } }
+          ],
+          "back" : [
+            { "name" : "rainbowcapeback" }
+          ],
+          "primary" : [
+            "astrosabredeluxe"
+          ]
+        }
+      ] ]
+    ]
+  }
+}

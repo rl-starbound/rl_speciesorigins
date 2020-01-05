@@ -1,0 +1,55 @@
+{
+  "type" : "speciesorigins_glitchknight",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "simple",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Alarmed. What is your major malfunction?",
+            "Imperative. Return to your post in the dining room!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "glitchtier4head", "parameters" : { "colorIndex" : 1 } }
+          ],
+          "chest" : [
+            { "name" : "glitchtier4chest", "parameters" : { "colorIndex" : 1 } }
+          ],
+          "legs" : [
+            { "name" : "glitchtier4pants", "parameters" : { "colorIndex" : 1 } }
+          ],
+          "primary" : [
+            "npcbroadsword",
+            "npcshortsword"
+          ],
+          "sheathedprimary" : [
+            { "name" : "npctungstenbow" }
+          ],
+          "alt" : [
+            "commonlargeshield"
+          ]
+        }
+      ] ]
+    ]
+  }
+}

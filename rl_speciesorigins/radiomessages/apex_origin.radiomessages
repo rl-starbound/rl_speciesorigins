@@ -1,0 +1,128 @@
+{
+  "apexOriginExitBedPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "Get up! We don't have much time! ^#71f2f6;Press A or D to get out of bed^white;.",
+    "type" : "mission"
+  },
+
+  "apexOriginJumpPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "^#71f2f6;Use spacebar to jump^white; up to higher platforms.",
+    "type" : "mission"
+  },
+
+  "apexOriginExitCellPester" : {
+    "portraitImage" : "/interface/chatbubbles/purestatic.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "To interact with a nearby person, door, or other object, you should ^#71f2f6;hover over it with your cursor and press E^white;.",
+    "type" : "mission"
+  },
+
+  "apexOriginUniform" : {
+    "important" : true,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "Alright, you got the earpiece working. There is a spare Miniknog uniform in the locker. Wearing it may help you avoid notice.",
+    "type" : "mission"
+  },
+
+  "apexOriginProtectorate" : {
+    "important" : true,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "The Miniknog are researching Protectorate technology in lab 3. You should raid it and take whatever you can find.",
+    "type" : "mission"
+  },
+
+  "apexOriginDropPester" : {
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "You can drop down through a platform by ^#71f2f6;holding S to crouch on it, then tapping spacebar^white;.",
+    "type" : "mission"
+  },
+
+  "apexOriginNeedBeamaxe" : {
+    "important" : true,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "This door is locked, but its frame looks weak. See if you can find something to break it.",
+    "type" : "mission"
+  },
+
+  "apexOriginBeamaxe" : {
+    "important" : true,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "This ^orange;Matter Manipulator^white; is the tool of the Protectors. It will allow you to shape the world around you.",
+    "type" : "mission"
+  },
+
+  "apexOriginUseBeamaxe" : {
+    "important" : true,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "The ^orange;Matter Manipulator^white; can be used to break the door frame. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the rusty metal above the door to break the frame.",
+    "type" : "mission"
+  },
+
+  "apexOriginLab" : {
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "The Miniknog scientist here is doing ... something ... to our people. We have to inform the resistance!",
+    "type" : "mission"
+  },
+
+  "apexOriginGetWeapon" : {
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "The chest sitting next to that conveyor belt should contain some kind of weapon. Arm yourself!",
+    "type" : "mission"
+  },
+
+  "apexOriginWeaponTutorial" : {
+    "important" : true,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "Access a weapon with ease by ^#71f2f6;placing it in one of the action bar slots^white; at the top of the screen, then ^#71f2f6;pressing the corresponding number key to equip^white; or unequip it.",
+    "type" : "mission"
+  },
+
+  "apexOriginAlarm1" : {
+    "persistTime" : 3,
+    "portraitImage" : "/ai/portraits/alt/apexportrait.png:yell.<frame>",
+    "senderName" : "Miniknog Commander",
+    "text" : "Rebel forces have infiltrated the base! Intruder in lab 4!",
+    "type" : "mission"
+  },
+
+  "apexOriginAlarm2" : {
+    "persistTime" : 1,
+    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "senderName" : "Rebel",
+    "text" : "*BAM* I'm not gonna make it. Alert the resista-- *BAM*",
+    "type" : "mission"
+  },
+
+  "apexOriginAlarm3" : {
+    "persistTime" : 2,
+    "portraitImage" : "/ai/portraits/alt/apexportrait.png:yell.<frame>",
+    "senderName" : "Miniknog Commander",
+    "text" : "Die, terrorist!",
+    "type" : "mission"
+  },
+
+  "apexOriginAlarm4" : {
+    "portraitImage" : "/ai/portraits/alt/apexportrait.png:talk.<frame>",
+    "senderName" : "Miniknog Commander",
+    "text" : "Attention escapee. Your rebel friend has been neutralized. Turn yourself in and your death will be quick.",
+    "type" : "mission"
+  },
+
+  "apexOriginChecks" : {
+    "important" : true,
+    "text" : "Miniknog soldiers are coming. I have bypassed the preflight checks. Get aboard!",
+    "type" : "mission"
+  }
+}

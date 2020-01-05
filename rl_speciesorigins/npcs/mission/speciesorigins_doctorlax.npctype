@@ -1,0 +1,56 @@
+{
+  "type" : "speciesorigins_doctorlax",
+  "baseType" : "base",
+
+  "npcname" : "Doctor Lax",
+  "identity" : {
+    "gender" : "female",
+    "facialHairGroup" : "beardfemale",
+    "facialHairType" : "8",
+    "hairGroup" : "hairfemale",
+    "hairType" : "19",
+    "personalityIdle" : "idle.2",
+    "personalityArmIdle" : "idle.2",
+    "bodyDirectives" : "?replace;a85636=8c3ea8;e0975c=b769e0;6f2919=722a82?replace;d9c189=d29a5f;735e3a=8c5d44;a38d59=ac7955;f7e7b2=e9c08b",
+    "emoteDirectives" : "?replace;a85636=8c3ea8;e0975c=b769e0;6f2919=722a82?replace;d9c189=d29a5f;735e3a=8c5d44;a38d59=ac7955;f7e7b2=e9c08b",
+    "facialHairDirectives" : "?replace;a85636=8c3ea8;e0975c=b769e0;6f2919=722a82",
+    "hairDirectives" : "?replace;a85636=8c3ea8;e0975c=b769e0;6f2919=722a82"
+  },
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_speaker",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/apex_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/apex_chatter_female1.ogg"
+        ]
+      }
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "speak" : {
+        "default" : {
+          "default" : [
+            "This bio-weapon will be our finest collaboration yet, old friend."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "scientistchest", "parameters" : { "colorIndex" : 7 } } ],
+            "legs" : [ { "name" : "scientistlegs", "parameters" : { "colorIndex" : 7 } } ]
+          }
+        ] ]
+    ]
+  }
+}

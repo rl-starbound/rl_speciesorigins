@@ -1,0 +1,122 @@
+[
+  [
+    { "op" : "test",
+      "path" : "/converse/apex/generic/15",
+      "value" : "Is this \"Protectorate\" a government organisation?"
+    },
+    { "op" : "replace",
+      "path" : "/converse/apex/generic/15",
+      "value" : "Do you know, is this \"Protectorate\" a government organisation?"
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/apex/generic/38",
+      "value" : "You are in the Protectorate?"
+    },
+    { "op" : "replace",
+      "path" : "/converse/apex/generic/38",
+      "value" : "You don't LOOK like Miniknog..."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/hylotl/hylotl/8",
+      "value" : "I suppose a Hylotl Protector must possess a warrior's skills... Remember, peace is also a skill."
+    },
+    { "op" : "replace",
+      "path" : "/converse/hylotl/hylotl/8",
+      "value" : "I suppose you must possess a warrior's skills... Remember, peace is also a skill."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/avian/generic/42",
+      "value" : "What's it like being a Protector?"
+    },
+    { "op" : "replace",
+      "path" : "/converse/avian/generic/42",
+      "value" : "I wonder what it's like to be a Protector..."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/avian/generic/65",
+      "value" : "What's it like to be a Protector?"
+    },
+    { "op" : "replace",
+      "path" : "/converse/avian/generic/65",
+      "value" : "I wonder what it's like to be a Protector..."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/avian/avian/7",
+      "value" : "What do the Protectorate think of Avian warrior culture?"
+    },
+    { "op" : "replace",
+      "path" : "/converse/avian/avian/7",
+      "value" : "Do you ever wonder what the Protectorate think of Avian warrior culture?"
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/avian/avian/8",
+      "value" : "Wow, an Avian Protector!"
+    },
+    { "op" : "replace",
+      "path" : "/converse/avian/avian/8",
+      "value" : "Have a good day, stranger."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/avian/hylotl/19",
+      "value" : "It makes sense that a peaceful Hylotl would join the peaceful Protectorate."
+    },
+    { "op" : "replace",
+      "path" : "/converse/avian/hylotl/19",
+      "value" : "Have a good day, stranger."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/human/generic/17",
+      "value" : "Nice to see someone from the Protectorate."
+    },
+    { "op" : "replace",
+      "path" : "/converse/human/generic/17",
+      "value" : "Nice to see someone new!"
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/human/generic/47",
+      "value" : "Are you in the Protectorate!? That's super cool!"
+    },
+    { "op" : "replace",
+      "path" : "/converse/human/generic/47",
+      "value" : "Have an awesome day!"
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/human/apex/11",
+      "value" : "I've heard bad things about the Miniknog, I'm not surprised you joined the Protectorate."
+    },
+    { "op" : "replace",
+      "path" : "/converse/human/apex/11",
+      "value" : "I've heard bad things about the Miniknog, I'm not surprised you rebelled."
+    }
+  ],
+  [
+    { "op" : "test",
+      "path" : "/converse/human/hylotl/9",
+      "value" : "Hylotl's strive for peace, right? Same as humans. No wonder you're a Protector."
+    },
+    { "op" : "replace",
+      "path" : "/converse/human/hylotl/9",
+      "value" : "Hylotl's strive for peace, right? Same as humans."
+    }
+  ]
+]

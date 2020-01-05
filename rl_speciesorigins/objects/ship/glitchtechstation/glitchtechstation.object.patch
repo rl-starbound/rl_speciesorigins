@@ -1,0 +1,6 @@
+[
+  { "op" : "replace",
+    "path" : "/dialog/wakeUp/3/0",
+    "value" : "We took heavy fire from the Glitch fortress during liftoff."
+  }
+]

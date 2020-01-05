@@ -1,0 +1,54 @@
+{
+  "id" : "apex_origin",
+  "mainQuest" : true,
+  "title" : "On The Run",
+  "text" : "You've rebelled against the Miniknog and been imprisoned for it. Will you survive?",
+  "completionText" : "The Miniknog have crushed your Apex rebel cell. You have escaped in a hijacking a Miniknog ship, which was damaged on escape. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "moneyRange" : [50, 50],
+  "canBeAbandoned" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/tutorial/apex_origin.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "startingMusicTime" : 11.5,
+    "startingMusicTracks" : ["/music/the-apex.ogg"],
+    "openingCinematic" : "/cinematics/apex/speciesorigins_start.cinematic",
+    "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
+    "confiscateItems" : [
+      "brokenprotectoratebroadsword",
+      "miniknogchest",
+      "miniknogpants",
+      "protectorateflowerhead",
+      ["bandage", 1000],
+      ["salve", 1000],
+      ["lightmetal", 1000],
+      ["rustymetal", 1000],
+      ["tier3door", 1000],
+      ["bottledwater", 1000],
+      ["oculemonade", 1000],
+      ["soda", 1000]
+    ],
+    "skipIntroItems" : [
+      "brokenprotectoratebroadsword"
+    ],
+    "postQuestItems" : [
+      "apexorigin1-codex",
+      "apexorigin2-codex",
+      "apexorigin3-codex"
+    ],
+
+    "descriptions" : {
+      "wake" : "Escape the cell block",
+      "matterManipulator" : "Take the matter manipulator",
+      "escape" : "Escape the facility"
+    },
+
+    "followUp" : "bootship"
+  }
+}

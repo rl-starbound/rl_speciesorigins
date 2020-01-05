@@ -1,0 +1,55 @@
+{
+  "type" : "speciesorigins_avianpriest2",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Your destiny awaits you atop the Celestial Tower."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Hail, <entityname>. Bathe in the healing waters to remove the last of your worldly cares.",
+            "Then claim your wings, and go to meet your destiny atop the Celestial Tower."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "phoenixhat", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "back" : [
+            { "name" : "guardwingsback", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "chest" : [
+            { "name" : "aviantier2chest", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "legs" : [
+            { "name" : "aviantier2pants", "parameters" : { "colorIndex" : 6 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

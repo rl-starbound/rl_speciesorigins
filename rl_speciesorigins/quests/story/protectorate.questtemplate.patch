@@ -1,0 +1,6 @@
+[
+  { "op" : "add",
+    "path" : "/scriptConfig/openingCinematic",
+    "value" : "/cinematics/intro/introstart.cinematic"
+  }
+]

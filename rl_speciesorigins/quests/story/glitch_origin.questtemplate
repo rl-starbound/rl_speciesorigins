@@ -1,0 +1,54 @@
+{
+  "id" : "glitch_origin",
+  "mainQuest" : true,
+  "title" : "Time For An Upgrade",
+  "text" : "Dubito, ergo cogito, ergo sum.",
+  "completionText" : "As one of the few Glitch to achieve self awareness, you were forced to flee your home with little preparation. Your ship has been damaged in your escape. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "moneyRange" : [50, 50],
+  "canBeAbandoned" : false,
+  "showAcceptDialog" : false,
+  "showCompleteDialog" : false,
+  "showFailDialog" : false,
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/tutorial/glitch_origin.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "default" : "player"
+    },
+    "startingMusicTime" : 11,
+    "startingMusicTracks" : ["/music/error-0xbfaf000.ogg"],
+    "openingCinematic" : "/cinematics/glitch/speciesorigins_start.cinematic",
+    "midpointMusicTime" : 47.0,
+    "midpointMusicTracks" : ["/music/inviolate-loop.ogg"],
+    "midpointCinematic" : "/cinematics/glitch/speciesorigins_midpoint.cinematic",
+    "midpointTeleportPosition" : [586, 666],
+    "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
+    "confiscateItems" : [
+      "brokenprotectoratebroadsword",
+      "protectorateflowerhead",
+      ["salve", 1000],
+      ["bandage", 1000],
+      ["dirtmaterial", 1000],
+      ["gravelmaterial", 1000],
+      ["bottledwater", 1000]
+    ],
+    "skipIntroItems" : [
+      "brokenprotectoratebroadsword"
+    ],
+    "postQuestItems" : [
+      "glitchorigin1-codex",
+      "glitchorigin2-codex",
+      "glitchorigin3-codex"
+    ],
+
+    "descriptions" : {
+      "think" : "Think for yourself",
+      "weapon" : "Arm yourself",
+      "matterManipulator" : "Take the matter manipulator",
+      "escape" : "Escape with your free will"
+    },
+
+    "followUp" : "bootship"
+  }
+}

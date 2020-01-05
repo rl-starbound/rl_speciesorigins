@@ -1,0 +1,10 @@
+[
+  { "op" : "test",
+    "path" : "/converse/avian/avian/6",
+    "value" : "You joined the Protectorate? How conducive is that to Kluex worship?"
+  },
+  { "op" : "replace",
+    "path" : "/converse/avian/avian/6",
+    "value" : "You travel among the stars in a ship? How conducive is that to Kluex worship?"
+  }
+]

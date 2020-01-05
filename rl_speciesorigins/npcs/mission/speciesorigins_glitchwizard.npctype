@@ -1,0 +1,51 @@
+{
+  "type" : "speciesorigins_glitchwizard",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "behaviorConfig": {
+      "clueChance" : 0
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Interrogative. Did you think you could just walk away from your duties?"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "wizardhead" }
+          ],
+          "chest" : [
+            { "name" : "wizardchest" }
+          ],
+          "legs" : [
+            { "name" : "wizardlegs" }
+          ],
+          "primary" : [
+            "teslastaff"
+          ]
+        }
+      ] ]
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[
+  { "op" : "add",
+    "path" : "/introInstance/apex",
+    "value" : "apexorigin"
+  },
+  { "op" : "add",
+    "path" : "/introInstance/avian",
+    "value" : "avianorigin"
+  },
+  { "op" : "add",
+    "path" : "/introInstance/floran",
+    "value" : "floranorigin"
+  },
+  { "op" : "add",
+    "path" : "/introInstance/glitch",
+    "value" : "glitchorigin"
+  },
+  { "op" : "add",
+    "path" : "/introInstance/hylotl",
+    "value" : "hylotlorigin"
+  },
+  { "op" : "add",
+    "path" : "/introInstance/novakid",
+    "value" : "novakidorigin"
+  }
+]

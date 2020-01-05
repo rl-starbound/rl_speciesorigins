@@ -1,0 +1,57 @@
+{
+  "type" : "speciesorigins_shadowygreenfinger",
+  "baseType" : "base",
+
+  "identity" : {
+    "gender" : "male",
+    "hairType" : "11",
+    "personalityIdle" : "idle.1",
+    "personalityArmIdle" : "idle.1",
+    "bodyDirectives" : "?replace=ffca8aFF=c4d0a5FF?replace=e0975cFF=a3af83FF?replace=a85636FF=7f8760FF?replace=6f2919FF=5e6142FF",
+    "emoteDirectives" : "?replace=ffca8aFF=c4d0a5FF?replace=e0975cFF=a3af83FF?replace=a85636FF=7f8760FF?replace=6f2919FF=5e6142FF"
+  },
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_speaker",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/floran_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/floran_chatter_female1.ogg"
+        ]
+      }
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Your progresss is excellent, Doctor Lax."
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "greenfingerhead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "florantier5mchest", "parameters" : { "colorIndex" : 3 } }
+            ],
+            "legs" : [
+              { "name" : "florantier5spants", "parameters" : { "colorIndex" : 3 } }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

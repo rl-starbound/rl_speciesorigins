@@ -1,0 +1,10 @@
+[
+  { "op" : "replace",
+    "path" : "/dialog/wakeUp/3/0",
+    "value" : "We were attacked with an unknown, but highly corrosive, gas during liftoff."
+  },
+  { "op" : "replace",
+    "path" : "/dialog/wakeUp/4/0",
+    "value" : "The ship's navigation systems were damaged. Our location is currently unknown."
+  }
+]

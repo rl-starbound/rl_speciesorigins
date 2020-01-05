@@ -1,0 +1,26 @@
+[
+  { "op": "replace",
+    "path": "/defaultCodexes/glitch",
+    "value": [ ]
+  },
+  { "op": "replace",
+    "path": "/defaultCodexes/avian",
+    "value": [ ]
+  },
+  { "op": "replace",
+    "path": "/defaultCodexes/apex",
+    "value": [ ]
+  },
+  { "op": "replace",
+    "path": "/defaultCodexes/floran",
+    "value": [ ]
+  },
+  { "op": "replace",
+    "path": "/defaultCodexes/hylotl",
+    "value": [ ]
+  },
+  { "op": "replace",
+    "path": "/defaultCodexes/novakid",
+    "value": [ ]
+  }
+]

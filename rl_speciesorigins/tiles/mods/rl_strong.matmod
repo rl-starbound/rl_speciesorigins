@@ -1,0 +1,16 @@
+{
+  "modId" : 47330,
+  "modName" : "rl_strong",
+  "description" : "This tile is extremely strong.",
+  "health" : 2048,
+  "harvestLevel" : 99,
+  "breaksWithTile" : true,
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "rl_invisible.png",
+    "variants" : 1,
+    "multiColored" : false,
+    "zLevel" : 0
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "beamaxe" : {
+        "default" : "hidden",
+        "states" : {
+          "hidden" : {},
+          "active" : {},
+          "inactive" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "beamaxe" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 2
+        },
+
+        "partStates" : {
+          "beamaxe" : {
+            "active" : {
+              "properties" : {
+                "image" : "avianbeamaxelit.png:active"
+              }
+            },
+
+            "inactive" : {
+              "properties" : {
+                "image" : "avianbeamaxelit.png:inactive"
+              }
+            }
+          }
+        }
+      },
+      "beamaxelit" : {
+        "properties" : {
+          "centered" : false,
+          "fullbright" : true,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "beamaxe" : {
+            "active" : {
+              "properties" : {
+                "image" : "avianbeamaxe.png:active"
+              }
+            },
+
+            "inactive" : {
+              "properties" : {
+                "image" : "avianbeamaxe.png:inactive"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

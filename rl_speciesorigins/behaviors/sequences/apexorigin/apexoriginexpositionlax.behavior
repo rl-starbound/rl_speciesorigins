@@ -1,0 +1,96 @@
+{
+  "name": "apexoriginexpositionlax",
+  "description": "Doctor Lax waits for the greenfinger to speak, then speaks.",
+  "scripts": [
+    "/scripts/actions/position.lua",
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/status.lua",
+    "/scripts/actions/notification.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "Speak",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "WaitForGreenfingerToSpeak",
+        "type": "composite",
+        "name": "dynamic",
+        "parameters": {},
+        "children": [
+          {
+            "title": null,
+            "type": "action",
+            "name": "receivedNotification",
+            "parameters": {
+              "type": {"value": "greenfingerspoke"}
+            }
+          },
+          {
+            "title": null,
+            "type": "action",
+            "name": "runner",
+            "parameters": {}
+          }
+        ]
+      },
+      {
+        "title": "FindGreenfinger",
+        "type": "action",
+        "name": "queryEntity",
+        "parameters": {
+          "entityTypes": {"value": ["npc"]},
+          "range": {"value": 5}
+        },
+        "output": {
+          "entity": "greenfinger"
+        }
+      },
+      {
+        "title": "FindAgaranPod",
+        "type": "action",
+        "name": "findObject",
+        "parameters": {
+          "name": {"value": "giantfloranpod"},
+          "range": {"value": 25}
+        },
+        "output": {
+          "entity": "agaranpod"
+        }
+      },
+      {
+        "title": "FaceGreenfinger",
+        "type": "action",
+        "name": "faceEntity",
+        "parameters": {
+          "entity": {"key": "greenfinger"}
+        }
+      },
+      {
+        "title": null,
+        "type": "module",
+        "name": "sequentialdialog",
+        "parameters": {
+          "dialogWaitTime": {"value": 4},
+          "dialogEndWait": {"value": 0.1},
+          "dialogKey": {"value": "dialog.speak"},
+          "dialogTarget": {"key": "greenfinger"}
+        }
+      },
+      {
+        "title": null,
+        "type": "action",
+        "name": "faceEntity",
+        "parameters": {
+          "entity": {"key": "agaranpod"}
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "type" : "speciesorigins_spacesaloonpatron2",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hello, child of the stars.",
+            "Please forgive me that I don't invite you to have tea with me.",
+            "I'm waiting for ... a friend ... who will be here ... shortly.",
+            "May peace follow you."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "valorouschest" }
+          ],
+          "legs" : [
+            { "name" : "valorouspants" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "name": "hylotloriginshroom",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/query.lua",
+    "/scripts/actions/world.lua",
+    "/scripts/actions/movement.lua",
+    "/scripts/actions/npc.lua",
+    "/scripts/actions/entity.lua",
+    "/scripts/actions/dialog.lua",
+    "/scripts/actions/time.lua"
+  ],
+  "parameters": {
+    "speakDistance": 10
+  },
+  "root": {
+    "title": null,
+    "type": "composite",
+    "name": "parallel",
+    "parameters": {
+      "fail": {"value": -1},
+      "success": {"value": -1}
+    },
+    "children": [
+      {
+        "title": "Speak",
+        "type": "decorator",
+        "name": "cooldown",
+        "parameters": {
+          "cooldown": {"value": [4, 10]}
+        },
+        "child": {
+          "title": null,
+          "type": "composite",
+          "name": "sequence",
+          "parameters": {},
+          "children": [
+            {
+              "title": null,
+              "type": "action",
+              "name": "setInteractive",
+              "parameters": {
+                "interactive": {"value": false}
+              }
+            },
+            {
+              "title": null,
+              "type": "composite",
+              "name": "dynamic",
+              "parameters": {},
+              "children": [
+                {
+                  "title": null,
+                  "type": "decorator",
+                  "name": "cooldown",
+                  "parameters": {
+                    "cooldown": {"value": 0.5}
+                  },
+                  "child": {
+                    "title": null,
+                    "type": "action",
+                    "name": "queryEntity",
+                    "parameters": {
+                      "entityTypes": {"value": ["player"]},
+                      "range": {"key": "<speakDistance>"}
+                    },
+                    "output": {
+                      "entity": "player"
+                    }
+                  }
+                },
+                {
+                  "title": null,
+                  "type": "action",
+                  "name": "runner",
+                  "parameters": {}
+                }
+              ]
+            },
+            {
+              "title": null,
+              "type": "action",
+              "name": "faceEntity",
+              "parameters": {
+                "entity": {"key": "player"}
+              }
+            },
+            {
+              "title": null,
+              "type": "action",
+              "name": "sayToEntity",
+              "parameters": {
+                "dialogType": {"value": "dialog.speak"},
+                "entity": {"key": "player"}
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

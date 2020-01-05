@@ -1,0 +1,440 @@
+{
+  "muteSfx" : true,
+  "muteMusic" : true,
+  "skippable" : false,
+  "backgroundFadeTime" : 0.5,
+  "backgroundColor" : [0, 0, 0, 255],
+
+  "panels" : [
+
+// ------------------ radio message popup background
+
+    {
+      "useCamera" : false,
+      "startTime" : 2,
+      "endTime" : 23,
+      "drawables" : [
+        {
+          "image" : "/cinematics/radiomessagebg.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [480, 50],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 20.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 21,
+          "frame" : 12
+        }
+      ]
+    },
+
+    // first radio message
+    {
+      "useCamera" : false,
+      "startTime" : 2.5,
+      "endTime" : 8.5,
+      "drawables" : [
+        {
+          "image" : "/ai/portraits/alt/glitchportrait.png:talk.<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "Interrogative. Did you think you could just walk away from your duties?",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 218
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [366.5, 50],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 2.5,
+          "frame" : 8,
+          "textPercentage" : 1
+        }
+      ]
+    },
+    // second radio message
+    {
+      "useCamera" : false,
+      "startTime" : 8.5,
+      "endTime" : 12.5,
+      "drawables" : [
+        {
+          "image" : "/ai/portraits/alt/glitchportrait.png:yell.<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "Incredulous. You seek *meaning* in life?",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 218
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [366.5, 50],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 2,
+          "frame" : 4,
+          "textPercentage" : 1
+        }
+      ]
+    },
+    // third radio message
+    {
+      "useCamera" : false,
+      "startTime" : 12.5,
+      "endTime" : 22.5,
+      "drawables" : [
+        {
+          "image" : "/ai/portraits/alt/glitchportrait.png:talk.<frame>"
+        }
+      ],
+      "animationFrames" : 2,
+      "text" : "Diagnostic. The plague of madness has consumed this Glitch. Judgmental. Take it to the guillotine for immediate disassembly.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 218
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [366.5, 50],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 4.5,
+          "frame" : 16,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// ------------------ radio message popup background 2
+
+    {
+      "useCamera" : false,
+      "startTime" : 30,
+      "endTime" : 36,
+      "drawables" : [
+        {
+          "image" : "/cinematics/radiomessagebg.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [480, 50],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 5.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 6,
+          "frame" : 12
+        }
+      ]
+    },
+
+    // forth radio message
+    {
+      "useCamera" : false,
+      "startTime" : 30.5,
+      "endTime" : 35.5,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/purestatic.png:<frame>"
+        }
+      ],
+      "animationFrames" : 4,
+      "text" : "Assertive. Unhand that robot!",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 218
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [366.5, 50],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 2,
+          "frame" : 4,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// ------------------ flash white
+
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/story/white.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 35,
+          "zoom" : 500,
+          "alpha" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 35.3,
+          "zoom" : 500,
+          "alpha" : 1,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 35.5,
+          "zoom" : 500,
+          "alpha" : 1,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 35.8,
+          "zoom" : 500,
+          "alpha" : 0,
+          "position" : [480, 270]
+        }
+      ]
+    },
+
+// ----------------- radio message popup background 3
+
+    {
+      "useCamera" : false,
+      "startTime" : 40,
+      "endTime" : 46,
+      "drawables" : [
+        {
+          "image" : "/cinematics/radiomessagebg.png:<frame>"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [480, 50],
+          "frame" : 0
+        },
+        {
+          "timecode" : 0.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 5.5,
+          "frame" : 6
+        },
+        {
+          "timecode" : 6,
+          "frame" : 12
+        }
+      ]
+    },
+
+    // fifth radio message
+    {
+      "useCamera" : false,
+      "startTime" : 40.5,
+      "endTime" : 45.5,
+      "drawables" : [
+        {
+          "image" : "/interface/chatbubbles/purestatic.png:<frame>"
+        }
+      ],
+      "animationFrames" : 4,
+      "text" : "Impatient. Wake up friend.",
+      "textPosition" : {
+        "position" : [34, 21],
+        "vAnchor" : "top",
+        "wrapWidth" : 218
+      },
+      "keyframes" : [
+        {
+          "timecode" : 0,
+          "alpha" : 1,
+          "zoom" : 1,
+          "position" : [366.5, 50],
+          "frame" : 0,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 0.3,
+          "textPercentage" : 0
+        },
+        {
+          "timecode" : 2,
+          "frame" : 4,
+          "textPercentage" : 1
+        }
+      ]
+    },
+
+// ------------------ foreground black
+
+    {
+      "drawables" : [
+        {
+          "image" : "/cinematics/respawn/black.png"
+        }
+      ],
+      "keyframes" : [
+        {
+          "timecode" : 46,
+          "zoom" : 500,
+          "alpha" : 0,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 46.25,
+          "zoom" : 500,
+          "alpha" : 1,
+          "position" : [480, 270]
+        },
+        {
+          "timecode" : 47,
+          "zoom" : 500,
+          "alpha" : 1,
+          "position" : [480, 270]
+        }
+      ]
+    }
+  ],
+
+
+  "audio" : [
+    {
+      "timecode" : 0.1,
+      "resource" : "/sfx/melee/swing_hammer.ogg"
+    },
+    {
+      "timecode" : 0.4,
+      "resource" : "/sfx/melee/hammer_smash1.ogg"
+    },
+    {
+      "timecode" : 2.8,
+      "endTimecode" : 5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 8.8,
+      "endTimecode" : 10.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 12.8,
+      "endTimecode" : 17,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 26,
+      "resource" : "/sfx/objects/bardoor_open.ogg"
+    },
+    {
+      "timecode" : 26.5,
+      "resource" : "/sfx/objects/bardoor_close.ogg"
+    },
+    {
+      "timecode" : 30.8,
+      "endTimecode" : 32.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    },
+    {
+      "timecode" : 34.2,
+      "resource" : "/sfx/melee/laser_weapon_swing1.ogg"
+    },
+    {
+      "timecode" : 34.4,
+      "resource" : "/sfx/melee/sword_hit_metal1.ogg"
+    },
+    {
+      "timecode" : 34.6,
+      "resource" : "/sfx/melee/laser_weapon_swing2.ogg"
+    },
+    {
+      "timecode" : 34.8,
+      "resource" : "/sfx/melee/sword_hit_metal2.ogg"
+    },
+    {
+      "timecode" : 35,
+      "resource" : "/sfx/melee/laser_weapon_swing3.ogg"
+    },
+    {
+      "timecode" : 35.2,
+      "resource" : "/sfx/melee/kill_robotic1.ogg"
+    },
+    {
+      "timecode" : 40.8,
+      "endTimecode" : 42.5,
+      "loops" : -1,
+      "resource" : "/sfx/interface/aichatter1_loop.ogg"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "type" : "speciesorigins_glitchexecutioner",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "simple",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Alarmed. What are you doing up here?",
+            "Excited. I have been waiting to try out my new axe!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "executionershead", "parameters" : { "colorIndex" : 1 } }
+          ],
+          "chest" : [
+            { "name" : "executionerschest", "parameters" : { "colorIndex" : 1 } }
+          ],
+          "legs" : [
+            { "name" : "workoutlegs", "parameters" : { "colorIndex" : 1 } }
+          ],
+          "primary" : [
+            "npcaxe"
+          ]
+        }
+      ] ]
+    ]
+  }
+}

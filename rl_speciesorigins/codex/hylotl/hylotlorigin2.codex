@@ -1,0 +1,20 @@
+{
+  "id" : "hylotlorigin2",
+  "species" : "hylotl",
+  "title" : "Hylotl Origins",
+  "description" : "The peace-loving Hylotl.",
+  "icon" : "hylotlorigin1.png",
+  "contentPages" : [
+    "A Hylotl Introduction
+
+The Hylotl, a semi-aquatic species with trinocular vision, were driven by the pursuit of beauty and perfection. Through years of living in tune with nature, they developed empathy towards all other species and a desire to reach out and save all living things. They traveled the stars as pacifists, teaching and learning from other races in peace, until the day they encountered the Floran.
+
+The Hylotl were unprepared for the",
+
+    "ferocity of Floran aggression. They were forced out of their homes, and off their homeworld entirely, by the Floran horde. Driven almost to extinction, the Hylotl finally found sanctuary beneath the waves, an environment in which their combat skills were more than a match for the Floran. Though open hostilities have been over for centuries, there is still some animosity between the two races, and the Hylotl are only now beginning cautiously to re-colonize planetary surfaces."
+  ],
+    "itemConfig" : {
+    "rarity" : "common",
+    "price" : 0
+  }
+}

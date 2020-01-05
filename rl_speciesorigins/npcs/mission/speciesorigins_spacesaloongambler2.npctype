@@ -1,0 +1,42 @@
+{
+  "type" : "speciesorigins_spacesaloongambler2",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The game's Apex Hold'em.",
+            "Sit down and prepare to lose some pixels!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "apexspecialistjacket" }
+          ],
+          "legs" : [
+            { "name" : "apexspecialistpants" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

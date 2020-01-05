@@ -1,0 +1,75 @@
+{
+  "type" : "speciesorigins_kawaski",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "npcname" : "Kawaski",
+  "identity" : {
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "39",
+    "personalityIdle" : "idle.2",
+    "personalityArmIdle" : "idle.2",
+    "personalityArmOffset" : [0, 0],
+    "personalityHeadOffset" : [-1, 0],
+    "species" : "hylotl",
+    "bodyDirectives" : "?replace;a85636=6f9e47;e0975c=a4d66b;ffca8a=dbf4b8;6f2919=426d26?replace;d9c189=82ab5f;735e3a=2d4f1d;a38d59=547a3c;f7e7b2=b3c89e?replace;dc1f00=ffe48e;951500=7c7135;f32200=ffffe7;be1b00=c1aa5c?replace;dc1f00=ffe48e;951500=7c7135;f32200=ffffe7;be1b00=c1aa5c",
+    "emoteDirectives" : "?replace;a85636=6f9e47;e0975c=a4d66b;ffca8a=dbf4b8;6f2919=426d26?replace;d9c189=82ab5f;735e3a=2d4f1d;a38d59=547a3c;f7e7b2=b3c89e?replace;dc1f00=ffe48e;951500=7c7135;f32200=ffffe7;be1b00=c1aa5c?replace;dc1f00=ffe48e;951500=7c7135;f32200=ffffe7;be1b00=c1aa5c",
+    "hairDirectives" : "?replace;d9c189=82ab5f;735e3a=2d4f1d;a38d59=547a3c;f7e7b2=b3c89e?replace;dc1f00=ffe48e;951500=7c7135;f32200=ffffe7;be1b00=c1aa5c"
+  },
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_speaker",
+
+    "chatSounds" : {
+      "default" : {
+        "male" : [
+          "/sfx/humanoid/hylotl_chatter_male1.ogg"
+        ],
+        "female" : [
+          "/sfx/humanoid/hylotl_chatter_female1.ogg"
+        ]
+      }
+    },
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "The Agaran village is just a few kilometers ahead.",
+            "We should make camp here for tonight and plan for contact tomorrow."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Hey <entityname>!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "traditionalchest", "parameters" : { "colorIndex" : 1246584868 } }
+          ],
+          "legs" : [
+            { "name" : "traditionallegs", "parameters" : { "colorIndex" : 3713308518 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

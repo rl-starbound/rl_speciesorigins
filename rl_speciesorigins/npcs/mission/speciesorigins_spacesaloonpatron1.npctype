@@ -1,0 +1,54 @@
+{
+  "type" : "speciesorigins_spacesaloonpatron1",
+  "baseType" : "base",
+
+  "npcname" : "Kane",
+  "identity" : {
+    "gender" : "male",
+    "hairGroup" : "hair",
+    "hairType" : "male64",
+    "bodyDirectives" : "?replace;c7815b=ac7261;ffe2c5=fbe1d4;d39c6c=cc9582;ffc181=f6baa2?replace;dc1f00=e6e6e6;951500=6f6f6f;be1b00=979797",
+    "emoteDirectives" : "?replace;c7815b=ac7261;ffe2c5=fbe1d4;d39c6c=cc9582;ffc181=f6baa2?replace;dc1f00=e6e6e6;951500=6f6f6f;be1b00=979797",
+    "hairDirectives" : "?replace;d9c189=50422f;735e3a=170f0d;a38d59=36261e?replace;dc1f00=e6e6e6;951500=6f6f6f;be1b00=979797"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "speciesorigins_lounger",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Hi! I've always wanted to meet a Novakid!",
+            "You should try the Space Special. It's great!",
+            "That said, it is giving me a bit of heartburn...",
+            "Urgh..."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "chest" : [
+            { "name" : "jumpsuitchest", "parameters" : { "colorIndex" : 3 } }
+          ],
+          "legs" : [
+            { "name" : "jumpsuitlegs", "parameters" : { "colorIndex" : 3 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

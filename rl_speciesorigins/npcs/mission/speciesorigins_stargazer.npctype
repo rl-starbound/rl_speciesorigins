@@ -1,0 +1,63 @@
+{
+  "type" : "speciesorigins_stargazer",
+  "baseType" : "base",
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "converse",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Leap now, into the welcoming arms of Kluex.",
+            "...",
+            "One does not make a god wait...",
+            "..."
+          ]
+        }
+      },
+      "speak" : {
+        "default" : {
+          "default" : [
+            "Long ago, Avian-kind dwelt beyond the stars with Kluex.",
+            "For our sins, we were cast out of the Aether and stripped of our wings...",
+            "doomed to walk the many worlds until we achieve true absolution.",
+            "For you, <entityname>, the time of that absolution is now.",
+            "When you leap from this tower, your body will fall away...",
+            "but your soul will be untethered, free to sore into the Aether and rejoin Kluex.",
+            "The wind calls your name, <entityname>; it is the voice of Kluex."
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "phoenixhat", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "back" : [
+            { "name" : "falconwingsback", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "chest" : [
+            { "name" : "aviantier2chest", "parameters" : { "colorIndex" : 6 } }
+          ],
+          "legs" : [
+            { "name" : "aviantier2pants", "parameters" : { "colorIndex" : 6 } }
+          ]
+        }
+      ] ]
+    ]
+  }
+}

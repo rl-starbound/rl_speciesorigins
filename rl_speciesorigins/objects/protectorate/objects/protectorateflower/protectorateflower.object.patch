@@ -1,0 +1,6 @@
+[
+  { "op" : "replace",
+    "path" : "/glitchDescription",
+    "value" : "Sentimental. I should take this flower with me as a reminder of today."
+  }
+]

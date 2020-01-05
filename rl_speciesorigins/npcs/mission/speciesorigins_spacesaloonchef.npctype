@@ -1,0 +1,53 @@
+{
+  "type" : "speciesorigins_spacesaloonchef",
+  "baseType" : "base",
+
+  "npcname" : "Francesca",
+  "identity" : {
+    "gender" : "female",
+    "hairType" : "fem14",
+    "personalityIdle" : "idle.2",
+    "personalityArmIdle" : "idle.5"
+  },
+
+  "damageTeamType" : "ghostly",
+
+  "persistent" : true,
+
+  "dropPools" : [ ],
+
+  "scriptConfig" : {
+    "behavior" : "simple",
+
+    "dialogMode" : "sequence",
+    "dialog" : {
+      "converse" : {
+        "default" : {
+          "default" : [
+            "What are you doing in my kitchen?",
+            "Unless you're my new sous chef, get out of here!"
+          ]
+        }
+      }
+    }
+  },
+
+  "matchColorIndices" : true,
+  "items" : {
+    "override" : [
+      [0, [
+        {
+          "head" : [
+            { "name" : "chefhead" }
+          ],
+          "chest" : [
+            { "name" : "chefchest" }
+          ],
+          "legs" : [
+            { "name" : "cheflegs" }
+          ]
+        }
+      ] ]
+    ]
+  }
+}
