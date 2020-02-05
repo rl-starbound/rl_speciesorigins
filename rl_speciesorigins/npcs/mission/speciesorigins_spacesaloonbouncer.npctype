@@ -2,7 +2,6 @@
   "type" : "speciesorigins_spacesaloonbouncer",
   "baseType" : "base",
 
-  "npcname" : "Knuckles",
   "identity" : {
     "gender" : "male",
     "hairType" : "male60",

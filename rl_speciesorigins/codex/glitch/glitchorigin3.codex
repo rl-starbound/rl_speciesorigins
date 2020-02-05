@@ -1,17 +1,13 @@
 {
   "id" : "glitchorigin3",
   "species" : "glitch",
-  "title" : "Glitch Future",
-  "description" : "A Glitch future.",
+  "title" : "A Glitch's Goal",
+  "description" : "A Glitch begins their life's work.",
   "icon" : "glitchorigin1.png",
   "contentPages" : [
-    "The Truth Has Set Me Free
+    "Awakened. Now that I am free to think critically about Glitch civilization and my place in it, I feel liberated. Concerned. But I am alone. Hopeful. There are others like me out there. Positive. I know I will find them.
 
-Awakened. Now that I am free to think critically about Glitch civilization and my place in it, I feel liberated. Concerned. But I am alone. Hopeful. There are others like me out there. Positive. I know I will find them.
-
-Curious. But now that I think about the Glitch, something bothers me. Reflective. Who created the us? Inquisitive. What was our purpose, and why were we abandoned? Determined. Perhaps, on my journey, I",
-
-    "will find answers. Prioritizing. After I find fuel."
+Curious. But now that I think about the Glitch, something bothers me. Reflective. Who created the us? Inquisitive. What was our purpose, and why were we abandoned? Determined. Perhaps, on my journey, I will find answers. Prioritizing. After I find fuel."
   ],
     "itemConfig" : {
     "rarity" : "common",

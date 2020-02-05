@@ -3,7 +3,7 @@
   "mainQuest" : true,
   "title" : "Spread Your Wings",
   "text" : "Today is the day of your Ascension, the day you join Kluex in the Aether.",
-  "completionText" : "You have narrowly escaped the wrath of the Stargazers, but your ship has been damaged during your escape. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "completionText" : "You narrowly escaped the wrath of the Stargazers, but your ship was damaged during liftoff. To keep moving you'll need to repair the ship's engines and navigation systems.",
   "moneyRange" : [50, 50],
   "canBeAbandoned" : false,
   "showAcceptDialog" : false,

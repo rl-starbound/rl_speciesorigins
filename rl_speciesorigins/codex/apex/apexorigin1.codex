@@ -5,13 +5,10 @@
   "description" : "An Apex journey begins.",
   "icon" : "apexorigin1.png",
   "contentPages" : [
-    "An Apex Journey Begins
+    "The Miniknog have destroyed the rebel cell to which you belonged. All of your comrades are dead, or worse. A brave rebel gave her life to help you escape in a hijacked Miniknog ship, which has now run out of fuel in orbit of an unknown planet.
 
-The Miniknog have destroyed the rebel cell to which you belonged. All of your comrades are dead, or worse. A brave rebel gave her life to help you escape in a hijacked Miniknog ship, which has now run out of fuel in orbit of an unknown planet.
-
-The sounds of gunfire and screaming Apex still ring in your ears, but you are free. Free, and floating in space. It's probably time to do something about that, you decide. And if you",
-
-    "encounter any Miniknog on your journey, well ... this time you're going ape."
+The sounds of gunfire and screaming Apex still ring in your ears, but you are free. Free, and floating in space. It's probably time to do something about that, you decide. And if you encounter any Miniknog on your journey, well ... this time you're going",
+    "ape."
   ],
     "itemConfig" : {
     "rarity" : "common",

@@ -5,13 +5,10 @@
   "description" : "A Glitch learns to think.",
   "icon" : "glitchorigin1.png",
   "contentPages" : [
-    "A Glitch Journey Begins
+    "As one of the few Glitch to achieve sentience, you were forced to flee your home with little preparation. Your ship has run out of fuel in orbit of an unknown planet. Being alone in unsympathetic territory is hard. Being alone stuck in space is even harder, you find.
 
-As one of the few Glitch to achieve sentience, you were forced to flee your home with little preparation. Your ship has run out of fuel in orbit of an unknown planet. Being alone in unsympathetic territory is hard. Being alone stuck in space is even harder, you find.
-
-But with self awareness comes self preservation. No longer bound by civilized routine, you have the capability to think independently, and",
-
-    "get yourself out of this mess. At least, in theory. It's time to find out just how useful sentient thought can be."
+But with self awareness comes self preservation. No longer bound by civilized routine, you have the capability to think independently, and get yourself out of this mess. At least, in theory. It's time to find out",
+    "just how useful sentient thought can be."
   ],
     "itemConfig" : {
     "rarity" : "common",

@@ -22,7 +22,7 @@
     "midpointMusicTime" : 47.0,
     "midpointMusicTracks" : ["/music/inviolate-loop.ogg"],
     "midpointCinematic" : "/cinematics/glitch/speciesorigins_midpoint.cinematic",
-    "midpointTeleportPosition" : [586, 666],
+    "midpointTeleportPosition" : [586, 679],
     "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
     "confiscateItems" : [
       "brokenprotectoratebroadsword",

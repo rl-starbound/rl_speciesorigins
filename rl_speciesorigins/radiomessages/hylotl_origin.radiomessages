@@ -35,9 +35,9 @@
 
   "hylotlOriginOverrun1" : {
     "persistTime" : 1,
-    "portraitImage" : "/interface/chatbubbles/soundonly.png:<frame>",
+    "portraitImage" : "/ai/portraits/alt/hylotlportrait.png:yell.<frame>",
     "senderName" : "Suzuki",
-    "text" : "Stand strong Kawaski! They're coming throu--",
+    "text" : "Stand strong Kawaski! They're breaking throu--",
     "type" : "mission"
   },
 
@@ -76,7 +76,7 @@
   },
 
   "hylotlOriginHurry" : {
-    "text" : "Sensors indicate a large mass of Agaran approaching. You might consider running faster.",
+    "text" : "Sensors indicate a large mass of Agarans approaching. You might consider running faster.",
     "type" : "mission"
   },
 

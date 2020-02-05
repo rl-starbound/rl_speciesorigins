@@ -5,13 +5,10 @@
   "description" : "A Hylotl survives.",
   "icon" : "hylotlorigin1.png",
   "contentPages" : [
-    "A Hylotl Journey Begins
+    "You came to an Agaran planet as part of a Hylotl mission of peace, but the mushrooms had other plans. They ambushed your camp and slaughtered your colleagues. You barely made it back to your ship before it was overrun, and now you find yourself drifting alone and out of fuel in orbit of an unknown planet.
 
-You came to an Agaran planet as part of a Hylotl mission of peace, but the mushrooms had other plans. They ambushed your camp and slaughtered your colleagues. You barely made it back to your ship before it was overrun, and now you find yourself drifting alone and out of fuel in orbit of an unknown planet.
-
-Hylotl records on the Agaran indicate that they are a peaceful race, willing to defend themselves if attacked, but",
-
-    "generally non-violent. Until now. You need to return to Hylotl civilization and report what you saw. You need to find out what happened. But first, you need to find fuel."
+Hylotl records on the Agaran indicate that they are a peaceful race, willing to defend themselves if attacked, but generally non-violent. Until now. You need to return to Hylotl civilization",
+    "and report what you saw. You need to find out what happened. But first, you need to find fuel."
   ],
     "itemConfig" : {
     "rarity" : "common",

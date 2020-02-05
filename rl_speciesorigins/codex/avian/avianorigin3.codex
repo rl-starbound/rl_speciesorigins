@@ -2,20 +2,16 @@
   "id" : "avianorigin3",
   "species" : "avian",
   "title" : "An Avian's Goal",
-  "description" : "A Avian begins their life's work.",
+  "description" : "The truth about Kluex.",
   "icon" : "avianorigin1.png",
   "contentPages" : [
-    "The Truth about Kluex
+    "All my life, I've strived to be a good Avian. My family was very religious, and I never thought to question the word of Kluex. When I was chosen to study at temple, my parents were so proud. It was only at temple that I began to doubt seriously, but I hid it behind a veil of religious fervor, thinking that something was wrong with me and I had only to fake it until Kluex revealed himself to me.
 
-All my life, I've strived to be a good Avian. My family was very religious, and I never thought to question the word of Kluex. When I was chosen to study at temple, my parents were so proud. It was only at temple that I began to doubt seriously, but I hid it behind a veil of religious fervor, thinking that something was wrong with me and I had only to fake it until Kluex revealed himself to me.
+My breaking point happened when I was selected for Ascendant's training. I had grown up hearing of Ascension in",
+    "reverential whispers, but it was always something distant and theoretical. The prospect of making the leap myself, at such a young age with so much life left to me ... I had to find a way out, even if it would bring shame to my family. Fortunately, the Grounded have networks among Avian society, and my voice was heard.
 
-My breaking point happened when I",
-
-    "was selected for Ascendant's training. I had grown up hearing of Ascension in reverential whispers, but it was always something distant and theoretical. The prospect of making the leap myself, at such a young age with so much life left to me ... I had to find a way out, even if it would bring shame to my family. Fortunately, the Grounded have networks among Avian society, and my voice was heard.
-
-While it is the case that I may have escaped for my own self- preservation, it is important I do not",
-
-    "forget my larger mission also. Kluex is not real. I will prove it. If I can do this, I can free my people from the tyranny of the Stargazers and their bloody rituals."
+While it is the case that I may have escaped for my own self- preservation, it is important I do not forget my larger mission also. Kluex is not real. I will prove it. If I can do",
+    "this, I can free my people from the tyranny of the Stargazers and their bloody rituals."
   ],
     "itemConfig" : {
     "rarity" : "common",

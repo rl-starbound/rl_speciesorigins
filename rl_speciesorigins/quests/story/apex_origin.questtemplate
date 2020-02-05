@@ -3,7 +3,7 @@
   "mainQuest" : true,
   "title" : "On The Run",
   "text" : "You've rebelled against the Miniknog and been imprisoned for it. Will you survive?",
-  "completionText" : "The Miniknog have crushed your Apex rebel cell. You have escaped in a hijacking a Miniknog ship, which was damaged on escape. To keep moving you'll need to repair the ship's engines and navigation systems.",
+  "completionText" : "The Miniknog have crushed your Apex rebel cell. You have escaped in a hijacked Miniknog ship, which was damaged on liftoff. To keep moving you'll need to repair the ship's engines and navigation systems.",
   "moneyRange" : [50, 50],
   "canBeAbandoned" : false,
   "showAcceptDialog" : false,

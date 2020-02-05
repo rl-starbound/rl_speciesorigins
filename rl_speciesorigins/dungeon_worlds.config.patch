@@ -1,111 +1,111 @@
 [
   {
-    "op": "add",
-    "path": "/apexorigin",
-    "value": {
-      "primaryDungeon": "apexorigin",
-      "threatLevel": 1,
-      "weatherPool" : [
-        [1.0, "storm"]
-      ],
-      "gravity": 80,
-      "worldSize": [ 2000, 2000 ],
-      "dungeonBaseHeight": 1000,
-      "dungeonSurfaceHeight": 850,
-      "ambientLightLevel": [ 32, 32, 32 ],
+    "op" : "add",
+    "path" : "/apexorigin",
+    "value" : {
+      "primaryDungeon" : "apexorigin",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [ 2000, 2000 ],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 860,
+      "ambientLightLevel" : [ 32, 32, 32 ],
       "biome" : "speciesorigins_jungle",
-      "environmentStatusEffects": [ "dontstarve" ]
+      "environmentStatusEffects" : [ "dontstarve" ],
+      "weatherPool" : [
+        [ 1.0, "storm" ]
+      ]
     }
   },
   {
-    "op": "add",
-    "path": "/avianorigin",
-    "value": {
-      "primaryDungeon": "avianorigin",
-      "threatLevel": 1,
-      "weatherPool" : [
-        [1.0, "clear"]
-      ],
-      "gravity": 80,
-      "worldSize": [ 2000, 2000 ],
-      "dungeonBaseHeight": 1000,
-      "dungeonSurfaceHeight": 680,
-      "ambientLightLevel": [ 32, 32, 32 ],
+    "op" : "add",
+    "path" : "/avianorigin",
+    "value" : {
+      "primaryDungeon" : "avianorigin",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [ 2000, 2000 ],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 680,
+      "ambientLightLevel" : [ 32, 32, 32 ],
       "biome" : "speciesorigins_desert",
-      "environmentStatusEffects": [ "dontstarve" ]
+      "environmentStatusEffects" : [ "dontstarve" ],
+      "weatherPool" : [
+        [ 1.0, "clear" ]
+      ]
     }
   },
   {
-    "op": "add",
-    "path": "/floranorigin",
-    "value": {
-      "primaryDungeon": "floranorigin",
-      "threatLevel": 1,
-      "weatherPool" : [
-        [1.0, "ember"]
-      ],
-      "gravity": 80,
-      "worldSize": [ 2000, 2000 ],
-      "dungeonBaseHeight": 1000,
-      "dungeonSurfaceHeight": 700,
-      "ambientLightLevel": [ 32, 32, 32 ],
+    "op" : "add",
+    "path" : "/floranorigin",
+    "value" : {
+      "primaryDungeon" : "floranorigin",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [ 2000, 2000 ],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 700,
+      "ambientLightLevel" : [ 32, 32, 32 ],
       "biome" : "speciesorigins_volcanic",
-      "environmentStatusEffects": [ "dontstarve" ]
-    }
-  },
-  {
-    "op": "add",
-    "path": "/glitchorigin",
-    "value": {
-      "primaryDungeon": "glitchorigin",
-      "threatLevel": 1,
+      "environmentStatusEffects" : [ "dontstarve" ],
       "weatherPool" : [
-        [1.0, "clear"]
-      ],
-      "gravity": 80,
-      "worldSize": [ 2000, 2000 ],
-      "dungeonBaseHeight": 1000,
-      "dungeonSurfaceHeight": 660,
-      "ambientLightLevel": [ 32, 32, 32 ],
-      "biome" : "speciesorigins_forest",
-      "environmentStatusEffects": [ "dontstarve" ]
+        [ 1.0, "ember" ]
+      ]
     }
   },
   {
-    "op": "add",
-    "path": "/hylotlorigin",
-    "value": {
-      "primaryDungeon": "hylotlorigin",
-      "threatLevel": 1,
+    "op" : "add",
+    "path" : "/glitchorigin",
+    "value" : {
+      "primaryDungeon" : "glitchorigin",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [ 2000, 2000 ],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 666,
+      "ambientLightLevel" : [ 32, 32, 32 ],
+      "biome" : "speciesorigins_forest",
+      "environmentStatusEffects" : [ "dontstarve" ],
       "weatherPool" : [
-        [1.0, "clear"]
-      ],
-      "gravity": 80,
-      "worldSize": [ 2000, 2000 ],
-      "dungeonBaseHeight": 1000,
-      "dungeonSurfaceHeight": 850,
-      "ambientLightLevel": [ 32, 32, 32 ],
-      "biome" : "speciesorigins_forest",
-      "environmentStatusEffects": [ "dontstarve" ]
+        [ 1.0, "clear" ]
+      ]
     }
   },
   {
-    "op": "add",
-    "path": "/novakidorigin",
-    "value": {
-      "primaryDungeon": "novakidorigin",
-      "threatLevel": 1,
+    "op" : "add",
+    "path" : "/hylotlorigin",
+    "value" : {
+      "primaryDungeon" : "hylotlorigin",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [ 2000, 2000 ],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 855,
+      "ambientLightLevel" : [ 32, 32, 32 ],
+      "biome" : "speciesorigins_forest",
+      "environmentStatusEffects" : [ "dontstarve" ],
+      "weatherPool" : [
+        [ 1.0, "clear" ]
+      ]
+    }
+  },
+  {
+    "op" : "add",
+    "path" : "/novakidorigin",
+    "value" : {
+      "primaryDungeon" : "novakidorigin",
+      "threatLevel" : 1,
       "airless" : false,
-      "weatherPool" : [
-        [1.0, "clear"]
-      ],
-      "gravity": 40,
-      "worldSize": [ 2000, 2000 ],
-      "dungeonBaseHeight": 1000,
-      "dungeonSurfaceHeight": 780,
-      "ambientLightLevel": [ 32, 32, 32 ],
+      "gravity" : 40,
+      "worldSize" : [ 2000, 2000 ],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 780,
+      "ambientLightLevel" : [ 32, 32, 32 ],
       "biome" : "space",
-      "environmentStatusEffects": [ "dontstarve" ]
+      "environmentStatusEffects" : [ "dontstarve" ],
+      "weatherPool" : [
+        [ 1.0, "clear" ]
+      ]
     }
   }
 ]

@@ -39,7 +39,7 @@
   },
 
   "glitchOriginGetWeapon" : {
-    "text" : "The chest should contain some kind of weapon. Arm yourself!",
+    "text" : "That chest should contain some kind of weapon. Arm yourself!",
     "type" : "mission"
   },
 

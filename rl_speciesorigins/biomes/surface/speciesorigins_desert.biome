@@ -142,7 +142,7 @@
   "subBlocks" : [ "sand", "sandstone01", "rock17" ],
   "ores" : "surface",
 
-  "parallax" : "/parallax/surface/desert.parallax",
+  "parallax" : "/parallax/surface/speciesorigins_desert.parallax",
 
   "ambientNoises" : {
     "day" : {

@@ -116,7 +116,7 @@
     },
     { "op" : "replace",
       "path" : "/converse/human/hylotl/9",
-      "value" : "Hylotl's strive for peace, right? Same as humans."
+      "value" : "Hylotls strive for peace, right? Same as humans."
     }
   ]
 ]

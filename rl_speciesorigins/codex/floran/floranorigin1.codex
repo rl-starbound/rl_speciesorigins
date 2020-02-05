@@ -5,12 +5,10 @@
   "description" : "A Floran narrowly escapes death. Maybe.",
   "icon" : "floranorigin1.png",
   "contentPages" : [
-    "A Floran Journey Begins
+    "An unknown purple warship bombarded your home planet without provocation, and the fallout caused massive forest fires that devastated the biome. You escaped in a damaged Floran ship, but it is out of fuel in orbit of an unknown planet. To find your way home, you'll have to explore the universe. And stab things in it.
 
-An unknown purple warship bombarded your home planet without provocation, and the fallout caused massive forest fires that devastated the biome. You escaped in a damaged Floran ship, but it is out of fuel in orbit of an unknown planet. To find your way home, you'll have to explore the universe. And stab things in it.
-
-And you do long to stab, but not just any old thing. You have honour. Integrity. You want to find that purple",
-    "warship and stab its whole crew, and when you return home triumphant, your cocoonkin, if any survived, will hold you up as the greatest hunter among them. You can feel it in your stems."
+And you do long to stab, but not just any old thing. You have honour. Integrity. You want to find that purple warship and stab its whole crew, and when you return home triumphant,",
+    "your cocoonkin, if any survived, will hold you up as the greatest hunter among them. You can feel it in your stems."
   ],
     "itemConfig" : {
     "rarity" : "common",

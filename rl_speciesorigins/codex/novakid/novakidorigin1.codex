@@ -4,12 +4,9 @@
   "description" : "A Novakid journey begins.",
   "icon" : "novakidorigin1.png",
   "contentPages" : [
-    "An Novakid Journey Begins
+    "You've escaped interstellar rest stop #583517 without settling your massive bar tab. Unfortunately, you were unable to find anyone who could repair your ship's engines, which have now broken down, leaving you stranded in orbit of an unknown planet.
 
-You've escaped interstellar rest stop #583517 without settling your massive bar tab. Unfortunately, you were unable to find anyone who could repair your ship's engines, which have now broken down, leaving you stranded in orbit of an unknown planet.
-
-You think back on your life of carefree adventure and debauchery and wonder if there is something you're missing. You have no idea where your race comes from. Maybe finding out",
-    "would be another adventure? If you don't starve to death first."
+You think back on your life of carefree adventure and debauchery and wonder if there is something you're missing. You have no idea where your race comes from. Maybe finding out would be another adventure? If you don't starve to death first."
   ],
     "itemConfig" : {
     "rarity" : "common",

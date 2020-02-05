@@ -22,7 +22,7 @@
     "midpointMusicTime" : 52,
     "midpointMusicTracks" : ["/music/ocean-battle1-loop.ogg"],
     "midpointCinematic" : "/cinematics/hylotl/speciesorigins_midpoint.cinematic",
-    "midpointTeleportPosition" : [600, 700],
+    "midpointTeleportPosition" : [600, 706],
     "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
     "confiscateItems" : [
       "brokenprotectoratebroadsword",
