@@ -1,5 +1,6 @@
 require("/quests/scripts/portraits.lua")
 require("/quests/scripts/questutil.lua")
+require("/quests/scripts/speciesoriginsutil.lua")
 
 function init()
   message.setHandler("enterMissionArea", function(_, _, areaName)
@@ -18,6 +19,12 @@ function init()
   message.setHandler("openCellDoor", function(...)
       world.sendEntityMessage(self.managerId, "openCellDoor")
     end)
+
+  self.coroutines = {}
+
+  self.compassUpdate = config.getParameter("compassUpdate", 0.5)
+  self.beamaxeUuid = "apexbeamaxe"
+  self.weaponchestUuid = "weaponchest"
 
   quest.setParameter("uniformLocker", {type = "item", item = "apexcoolcupboard"})
   quest.setParameter("beamaxe", {type = "item", item = "apexbeamaxe"})
@@ -88,6 +95,8 @@ function update(dt)
     end
   end
 
+  speciesoriginsutil.updateCoroutines(self.coroutines)
+
   updateStage(dt)
 
   updatePester(dt)
@@ -149,6 +158,9 @@ function setStage(newStage)
       setPester("apexOriginDropPester", 30)
       quest.setIndicators({"beamaxe"})
       quest.setObjectiveList({{config.getParameter("descriptions.matterManipulator"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.beamaxeUuid,
+          self.compassUpdate, function() return self.missionStage < 6 end))
       player.radioMessage("apexOriginProtectorate")
     elseif newStage == 6 then
       setPester("apexOriginBeamaxe", 8)
@@ -158,10 +170,15 @@ function setStage(newStage)
       quest.setObjectiveList({{config.getParameter("descriptions.escape"), false}})
     elseif newStage == 7 then
       quest.setIndicators({"weaponChest"})
+      quest.setObjectiveList({{config.getParameter("descriptions.weapon"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.weaponchestUuid,
+          self.compassUpdate, function() return self.missionStage < 8 end))
       player.radioMessage("apexOriginGetWeapon")
     elseif newStage == 8 then
       quest.setIndicators({})
       world.sendEntityMessage(self.managerId, "unlockArmoryDoor")
+      quest.setObjectiveList({{config.getParameter("descriptions.escape"), false}})
       player.radioMessage("apexOriginWeaponTutorial")
     elseif newStage == 9 then
       world.sendEntityMessage(self.managerId, "activateAlarm")

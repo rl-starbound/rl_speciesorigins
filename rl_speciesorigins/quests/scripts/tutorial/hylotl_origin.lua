@@ -1,5 +1,6 @@
 require("/quests/scripts/portraits.lua")
 require("/quests/scripts/questutil.lua")
+require("/quests/scripts/speciesoriginsutil.lua")
 
 function init()
   message.setHandler("enterMissionArea", function(_, _, areaName)
@@ -18,6 +19,12 @@ function init()
   message.setHandler("giveBeamaxe", function(...)
       setStage(5)
     end)
+
+  self.coroutines = {}
+
+  self.compassUpdate = config.getParameter("compassUpdate", 0.5)
+  self.beamaxeUuid = "hylotlbeamaxe"
+  self.weaponchestUuid = "weaponchest"
 
   quest.setParameter("beamaxe", {type = "item", item = "hylotlbeamaxe"})
   quest.setParameter("weaponChest", {type = "item", item = "weaponchest"})
@@ -100,6 +107,8 @@ function update(dt)
     end
   end
 
+  speciesoriginsutil.updateCoroutines(self.coroutines)
+
   updateStage(dt)
 
   updatePester(dt)
@@ -159,6 +168,9 @@ function setStage(newStage)
       setPester("hylotlOriginInteractPester", 30)
       world.sendEntityMessage(self.managerId, "activateBeamaxe")
       quest.setIndicators({"beamaxe"})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.beamaxeUuid,
+          self.compassUpdate, function() return self.missionStage < 5 end))
     elseif newStage == 5 then
       setPester("hylotlOriginBeamaxePester", 8)
       quest.setIndicators({})
@@ -218,6 +230,7 @@ function updateStage(dt)
       self.hasWeapon = true
       quest.setIndicators({})
       world.sendEntityMessage(self.managerId, "openMineHatch")
+      quest.setObjectiveList({{config.getParameter("descriptions.escape"), false}})
       player.radioMessage("hylotlOriginWeaponTutorial")
     end
   elseif self.missionStage == 10 then
@@ -284,6 +297,10 @@ function updateWeaponPester(dt)
     self.weaponPesterTimer = self.weaponPesterTimer - dt
     if self.weaponPesterTimer <= 0 then
       quest.setIndicators({"weaponChest"})
+      quest.setObjectiveList({{config.getParameter("descriptions.weapon"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.weaponchestUuid,
+          self.compassUpdate, function() return not player.hasItem("brokenprotectoratebroadsword") end))
       player.radioMessage("hylotlOriginGetWeaponPester")
     end
   end

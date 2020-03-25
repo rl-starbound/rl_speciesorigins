@@ -26,7 +26,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"avianship\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -3169,7 +3169,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 } ] }"
+                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 } ], \"uniqueId\" : \"weaponchest\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -5105,7 +5105,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"avianbeamaxe\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -5190,7 +5190,7 @@
                  "y":2488
                 }, 
                 {
-                 "height":400,
+                 "height":800,
                  "id":366,
                  "name":"leapt",
                  "properties":
@@ -5203,7 +5203,7 @@
                  "visible":true,
                  "width":56,
                  "x":4368,
-                 "y":1992
+                 "y":1760
                 }, 
                 {
                  "height":64,

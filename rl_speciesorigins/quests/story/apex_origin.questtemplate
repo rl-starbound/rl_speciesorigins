@@ -46,8 +46,11 @@
     "descriptions" : {
       "wake" : "Escape the cell block",
       "matterManipulator" : "Take the matter manipulator",
+      "weapon" : "Arm yourself",
       "escape" : "Escape the facility"
     },
+
+    "compassUpdate" : 0.2,
 
     "followUp" : "bootship"
   }

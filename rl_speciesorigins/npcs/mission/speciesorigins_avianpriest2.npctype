@@ -2,6 +2,11 @@
   "type" : "speciesorigins_avianpriest2",
   "baseType" : "base",
 
+  "identity" : {
+    "personalityIdle" : "idle.4",
+    "personalityArmIdle" : "idle.4"
+  },
+
   "damageTeamType" : "ghostly",
 
   "persistent" : true,

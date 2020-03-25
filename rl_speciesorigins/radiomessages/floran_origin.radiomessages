@@ -27,6 +27,11 @@
     "type" : "mission"
   },
 
+  "floranOriginWrongWay" : {
+    "text" : "You are moving away from the crashed ship. Head east to investigate it.",
+    "type" : "mission"
+  },
+
   "floranOriginMotivator" : {
     "important" : true,
     "text" : "The scale of the devastation is incredible. You appear to be the only survivor. I recommend trying to use the downed ship to escape this planet.",

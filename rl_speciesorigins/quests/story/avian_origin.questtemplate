@@ -16,8 +16,8 @@
     "portraits" : {
       "default" : "player"
     },
-    "startingMusicTime" : 11.5,
-    "startingMusicTracks" : ["/music/desert-exploration1.ogg"],
+    "startingMusicTime" : 8,
+    "startingMusicTracks" : ["/music/casiopeia.ogg"],
     "openingCinematic" : "/cinematics/avian/speciesorigins_start.cinematic",
     "midpointMusicTracks" : ["/music/desert-battle-2.ogg"],
     "endpointCinematic" : "/cinematics/speciesorigins/complete.cinematic",
@@ -42,8 +42,12 @@
 
     "descriptions" : {
       "wake" : "Leap from the top of the Celestial Tower",
+      "matterManipulator" : "Take the matter manipulator",
+      "weapon" : "Arm yourself",
       "escape" : "Escape the wrath of the Stargazers"
     },
+
+    "compassUpdate" : 0.2,
 
     "followUp" : "bootship"
   }

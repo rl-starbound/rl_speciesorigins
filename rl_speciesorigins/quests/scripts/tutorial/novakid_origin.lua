@@ -1,5 +1,6 @@
 require("/quests/scripts/portraits.lua")
 require("/quests/scripts/questutil.lua")
+require("/quests/scripts/speciesoriginsutil.lua")
 
 function init()
   message.setHandler("enterMissionArea", function(_, _, areaName)
@@ -14,6 +15,10 @@ function init()
   message.setHandler("activateWeaponChest", function(...)
       if not player.hasItem("brokenprotectoratebroadsword") then
         quest.setIndicators({"weaponChest"})
+        quest.setObjectiveList({{config.getParameter("descriptions.weapon"), false}})
+        speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+          speciesoriginsutil.pointToUniqueEntity(self.weaponchestUuid,
+            self.compassUpdate, function() return self.missionStage < 9 end))
       end
     end)
 
@@ -25,6 +30,12 @@ function init()
       world.sendEntityMessage(self.managerId, "unlockKitchenDoor")
       setPester("novakidOriginBill", 2)
     end)
+
+  self.coroutines = {}
+
+  self.compassUpdate = config.getParameter("compassUpdate", 0.5)
+  self.beamaxeUuid = "novakidbeamaxe"
+  self.weaponchestUuid = "weaponchest"
 
   quest.setParameter("beamaxe", {type = "item", item = "novakidbeamaxe"})
   quest.setParameter("weaponChest", {type = "item", item = "weaponchest"})
@@ -94,6 +105,8 @@ function update(dt)
     end
   end
 
+  speciesoriginsutil.updateCoroutines(self.coroutines)
+
   updateStage(dt)
 
   updatePester(dt)
@@ -155,6 +168,9 @@ function setStage(newStage)
       quest.setIndicators({"beamaxe"})
       world.sendEntityMessage(self.managerId, "activateBeamaxe")
       quest.setObjectiveList({{config.getParameter("descriptions.matterManipulator"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.beamaxeUuid,
+          self.compassUpdate, function() return self.missionStage < 7 end))
       player.radioMessage("novakidOriginTreasure")
     elseif newStage == 7 then
       setPester("novakidOriginMMPester", 10)
@@ -167,6 +183,7 @@ function setStage(newStage)
     elseif newStage == 9 then
       quest.setIndicators({})
       world.sendEntityMessage(self.managerId, "unlockSheriffDoor")
+      quest.setObjectiveList({{config.getParameter("descriptions.escape"), false}})
       player.radioMessage("novakidOriginWeaponTutorial")
     elseif newStage == 10 then
       world.sendEntityMessage(entity.id(), "playCinematic", config.getParameter("endpointCinematic"))

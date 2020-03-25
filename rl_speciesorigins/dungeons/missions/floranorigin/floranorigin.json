@@ -26,7 +26,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"floranship\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -5169,7 +5169,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 }, { \"name\" : \"money\", \"count\" : 150 } ] }"
+                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 }, { \"name\" : \"money\", \"count\" : 150 } ], \"uniqueId\" : \"weaponchest\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -6593,7 +6593,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"floranbeamaxe\" }"
                     },
                  "rotation":0,
                  "type":"",

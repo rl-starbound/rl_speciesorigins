@@ -1,5 +1,6 @@
 require("/quests/scripts/portraits.lua")
 require("/quests/scripts/questutil.lua")
+require("/quests/scripts/speciesoriginsutil.lua")
 
 function init()
   message.setHandler("enterMissionArea", function(_, _, areaName)
@@ -14,6 +15,12 @@ function init()
   message.setHandler("giveBeamaxe", function(...)
       setStage(7)
     end)
+
+  self.coroutines = {}
+
+  self.compassUpdate = config.getParameter("compassUpdate", 0.5)
+  self.beamaxeUuid = "floranbeamaxe"
+  self.weaponchestUuid = "weaponchest"
 
   quest.setParameter("beamaxe", {type = "item", item = "floranbeamaxe"})
   quest.setParameter("weaponChest", {type = "item", item = "weaponchest"})
@@ -83,6 +90,8 @@ function update(dt)
     end
   end
 
+  speciesoriginsutil.updateCoroutines(self.coroutines)
+
   updateStage(dt)
 
   updatePester(dt)
@@ -145,17 +154,27 @@ function setStage(newStage)
     elseif newStage == 6 then
       world.sendEntityMessage(self.managerId, "activateBeamaxe")
       quest.setIndicators({"beamaxe"})
+      quest.setObjectiveList({{config.getParameter("descriptions.matterManipulator"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.beamaxeUuid,
+          self.compassUpdate, function() return self.missionStage < 7 end))
       player.radioMessage("floranOriginTakeBeamaxe")
     elseif newStage == 7 then
       quest.setIndicators({})
       player.giveEssentialItem("beamaxe", "beamaxe")
       world.sendEntityMessage(entity.id(), "playCinematic", "/cinematics/beamaxe.cinematic")
+      quest.setObjectiveList({{config.getParameter("descriptions.investigate"), false}})
     elseif newStage == 8 then
       quest.setIndicators({"weaponChest"})
+      quest.setObjectiveList({{config.getParameter("descriptions.weapon"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.weaponchestUuid,
+          self.compassUpdate, function() return self.missionStage < 9 end))
       player.radioMessage("floranOriginCrater")
     elseif newStage == 9 then
       quest.setIndicators({})
       world.sendEntityMessage(self.managerId, "unlockArmoryDoor")
+      quest.setObjectiveList({{config.getParameter("descriptions.investigate"), false}})
       player.radioMessage("floranOriginWeaponTutorial")
     elseif newStage == 10 then
       world.sendEntityMessage(entity.id(), "playCinematic", config.getParameter("endpointCinematic"))
@@ -212,8 +231,11 @@ function stageEnterArea(areaName)
     setPester()
   elseif areaName == "outside" then
     setStage(3)
-  elseif areaName == "wrong" and self.missionStage < 4 then
-    setPester()
+  elseif areaName == "wrong" then
+    if self.missionStage < 4 then
+      setPester()
+    end
+    player.radioMessage("floranOriginWrongWay")
   elseif areaName == "kitchen" and self.missionStage < 4 then
     setPester()
   elseif areaName == "blocked" then

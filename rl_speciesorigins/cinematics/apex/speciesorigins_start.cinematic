@@ -133,7 +133,7 @@
       "endTime" : 6,
       "drawables" : [
         {
-          "image" : "/interface/chatbubbles/purestatic.png:<frame>"
+          "image" : "/ai/portraits/alt/apexportrait.png:yell.<frame>"
         }
       ],
       "animationFrames" : 2,
@@ -170,7 +170,7 @@
       "endTime" : 9.5,
       "drawables" : [
         {
-          "image" : "/interface/chatbubbles/purestatic.png:<frame>"
+          "image" : "/ai/portraits/alt/apexportrait.png:talk.<frame>"
         }
       ],
       "animationFrames" : 2,

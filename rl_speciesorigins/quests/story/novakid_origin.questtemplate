@@ -41,8 +41,11 @@
     "descriptions" : {
       "wake" : "Dine and dash",
       "matterManipulator" : "Take the matter manipulator",
+      "weapon" : "Retrieve your weapon",
       "escape" : "Get outta Dodge"
     },
+
+    "compassUpdate" : 0.2,
 
     "followUp" : "bootship"
   }

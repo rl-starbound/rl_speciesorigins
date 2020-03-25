@@ -26,7 +26,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"glitchship\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -1618,7 +1618,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 }, { \"name\" : \"money\", \"count\" : 150 } ] }"
+                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 }, { \"name\" : \"money\", \"count\" : 150 } ], \"uniqueId\" : \"weaponchest\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -6082,7 +6082,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"glitchbeamaxe\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -6454,8 +6454,8 @@
                  "name":"tunnel",
                  "properties":
                     {
-                     "parameters":"{\"radioMessage\": \"glitchOriginBeamaxeDig\"}",
-                     "stagehand":"radiomessage"
+                     "parameters":"{ \"messageType\" : \"enterMissionArea\", \"messageArgs\" : \"tunnel\"}",
+                     "stagehand":"messenger"
                     },
                  "rotation":0,
                  "type":"",
@@ -7961,6 +7961,7 @@
                  "properties":
                     {
                      "npc":"glitch",
+                     "parameters":"{ \"scriptConfig\" : { \"uniqueId\" : \"glitchwizard\" } }",
                      "typeName":"speciesorigins_glitchwizard"
                     },
                  "rotation":0,

@@ -41,8 +41,12 @@
 
     "descriptions" : {
       "burning" : "You smell something burning",
+      "matterManipulator" : "Take the matter manipulator",
+      "weapon" : "Arm yourself",
       "investigate": "Investigate the crash site"
     },
+
+    "compassUpdate" : 0.2,
 
     "followUp" : "bootship"
   }

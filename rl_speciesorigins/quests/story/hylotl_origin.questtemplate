@@ -47,8 +47,11 @@
       "explore" : "Explore your surroundings",
       "sleep" : "Rest for the evening",
       "matterManipulator" : "Take the matter manipulator",
+      "weapon" : "Arm yourself",
       "escape" : "Don't stop running"
     },
+
+    "compassUpdate" : 0.2,
 
     "followUp" : "bootship"
   }

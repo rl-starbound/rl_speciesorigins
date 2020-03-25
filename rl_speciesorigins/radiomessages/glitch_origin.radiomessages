@@ -6,7 +6,7 @@
     "type" : "mission"
   },
 
-  "glitchOriginSevered" : {
+  "glitchOriginSentient" : {
     "important" : true,
     "text" : "This is S.A.I.L. speaking. We have detected that you have attained self-awareness and are on our way to aid you.",
     "type" : "mission"
@@ -62,7 +62,12 @@
     "type" : "mission"
   },
 
-  "glitchOriginBeamaxeDig" : {
+  "glitchOriginNeedBeamaxe" : {
+    "text" : "The base of this tower is weak. You must find something to help you dig under it.",
+    "type" : "mission"
+  },
+
+  "glitchOriginUseBeamaxe" : {
     "text" : "You must use the ^orange;Matter Manipulator^white; to remove the gravel. ^#71f2f6;Press the R key to equip it^white;, then click and hold on the gravel to dig through it.",
     "type" : "mission"
   },

@@ -1,5 +1,6 @@
 require("/quests/scripts/portraits.lua")
 require("/quests/scripts/questutil.lua")
+require("/quests/scripts/speciesoriginsutil.lua")
 
 function init()
   message.setHandler("enterMissionArea", function(_, _, areaName)
@@ -18,6 +19,13 @@ function init()
   message.setHandler("unlockArmoryDoor", function(...)
       world.sendEntityMessage(self.managerId, "unlockArmoryDoor")
     end)
+
+  self.coroutines = {}
+
+  self.compassUpdate = config.getParameter("compassUpdate", 0.5)
+  self.beamaxeUuid = "glitchbeamaxe"
+  self.weaponchestUuid = "weaponchest"
+  self.wizardUuid = "glitchwizard"
 
   quest.setParameter("beamaxe", {type = "item", item = "glitchbeamaxe"})
   quest.setParameter("weaponChest", {type = "item", item = "weaponchest"})
@@ -95,6 +103,8 @@ function update(dt)
     end
   end
 
+  speciesoriginsutil.updateCoroutines(self.coroutines)
+
   updateStage(dt)
 
   updatePester(dt)
@@ -145,9 +155,12 @@ function setStage(newStage)
       quest.setObjectiveList({{config.getParameter("descriptions.think"), false}})
     elseif newStage == 2 then
       setPester("glitchOriginDoorPester", 30)
-      player.radioMessage("glitchOriginSevered")
+      player.radioMessage("glitchOriginSentient")
     elseif newStage == 3 then
       setPester("glitchOriginStairPester", 30)
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.wizardUuid,
+          self.compassUpdate, function() return self.missionStage < 4 end))
       player.radioMessage("glitchOriginKitchen")
     elseif newStage == 4 then
       self.midpointTransitionTimer = 2.0
@@ -156,11 +169,17 @@ function setStage(newStage)
     elseif newStage == 5 then
       quest.setIndicators({"weaponChest"})
       quest.setObjectiveList({{config.getParameter("descriptions.weapon"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.weaponchestUuid,
+          self.compassUpdate, function() return self.missionStage < 6 end))
       player.radioMessage("glitchOriginGetWeapon")
     elseif newStage == 6 then
       world.sendEntityMessage(self.managerId, "activateBeamaxe")
       quest.setIndicators({"beamaxe"})
       quest.setObjectiveList({{config.getParameter("descriptions.matterManipulator"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.beamaxeUuid,
+          self.compassUpdate, function() return self.missionStage < 8 end))
       player.radioMessage("glitchOriginWeaponTutorial")
     elseif newStage == 7 then
       setPester("glitchOriginDropDownPester", 30)
@@ -239,6 +258,7 @@ end
 -- weapon
 -- highpoint
 -- dropped
+-- tunnel
 -- escaped
 -- ship
 
@@ -257,6 +277,12 @@ function stageEnterArea(areaName)
     setStage(7)
   elseif areaName == "dropped" and self.missionStage < 8 then
     setPester()
+  elseif areaName == "tunnel" then
+    if self.missionStage < 8 then
+      player.radioMessage("glitchOriginNeedBeamaxe")
+    else
+      player.radioMessage("glitchOriginUseBeamaxe")
+    end
   elseif areaName == "escaped" then
     setStage(9)
   elseif areaName == "ship" then

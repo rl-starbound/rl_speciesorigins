@@ -49,6 +49,8 @@
       "escape" : "Escape with your free will"
     },
 
+    "compassUpdate" : 0.2,
+
     "followUp" : "bootship"
   }
 }

@@ -1,5 +1,6 @@
 require("/quests/scripts/portraits.lua")
 require("/quests/scripts/questutil.lua")
+require("/quests/scripts/speciesoriginsutil.lua")
 
 function init()
   message.setHandler("enterMissionArea", function(_, _, areaName)
@@ -22,6 +23,12 @@ function init()
   message.setHandler("giveBeamaxe", function(...)
       setStage(8)
     end)
+
+  self.coroutines = {}
+
+  self.compassUpdate = config.getParameter("compassUpdate", 0.5)
+  self.beamaxeUuid = "avianbeamaxe"
+  self.weaponchestUuid = "weaponchest"
 
   quest.setParameter("wingchest", {type = "item", item = "chestmedavian1"})
   quest.setParameter("beamaxe", {type = "item", item = "avianbeamaxe"})
@@ -92,6 +99,8 @@ function update(dt)
     end
   end
 
+  speciesoriginsutil.updateCoroutines(self.coroutines)
+
   updateStage(dt)
 
   updatePester(dt)
@@ -157,13 +166,22 @@ function setStage(newStage)
       world.sendEntityMessage(entity.id(), "playAltMusic", config.getParameter("midpointMusicTracks"))
     elseif newStage == 7 then
       quest.setIndicators({"beamaxe"})
+      quest.setObjectiveList({{config.getParameter("descriptions.matterManipulator"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.beamaxeUuid,
+          self.compassUpdate, function() return self.missionStage < 8 end))
       player.radioMessage("avianOriginFindBeamaxe")
     elseif newStage == 8 then
       quest.setIndicators({})
       player.giveEssentialItem("beamaxe", "beamaxe")
       world.sendEntityMessage(entity.id(), "playCinematic", "/cinematics/beamaxe.cinematic")
+      quest.setObjectiveList({{config.getParameter("descriptions.escape"), false}})
     elseif newStage == 9 then
       quest.setIndicators({"weaponChest"})
+      quest.setObjectiveList({{config.getParameter("descriptions.weapon"), false}})
+      speciesoriginsutil.addCoroutine(self.coroutines, "pointTo",
+        speciesoriginsutil.pointToUniqueEntity(self.weaponchestUuid,
+          self.compassUpdate, function() return not player.hasItem("brokenprotectoratebroadsword") end))
       player.radioMessage("avianOriginWeapon")
     elseif newStage == 10 then
       world.sendEntityMessage(entity.id(), "playCinematic", config.getParameter("endpointCinematic"))
@@ -198,6 +216,7 @@ function updateStage(dt)
       self.hasWeapon = true
       quest.setIndicators({})
       world.sendEntityMessage(self.managerId, "unlockArmoryDoor")
+      quest.setObjectiveList({{config.getParameter("descriptions.escape"), false}})
       player.radioMessage("avianOriginWeaponTutorial")
     end
   elseif self.missionStage == 10 then

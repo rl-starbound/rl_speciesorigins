@@ -285,7 +285,7 @@
                  "name":"",
                  "properties":
                     {
-                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 } ] }"
+                     "parameters":"{ \"initialItems\" : [ { \"name\" : \"brokenprotectoratebroadsword\", \"count\" : 1 } ], \"uniqueId\" : \"weaponchest\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -317,7 +317,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"novakidship\" }"
                     },
                  "rotation":0,
                  "type":"",
@@ -5165,7 +5165,7 @@
                  "name":"",
                  "properties":
                     {
-
+                     "parameters":"{ \"uniqueId\" : \"novakidbeamaxe\" }"
                     },
                  "rotation":0,
                  "type":"",
