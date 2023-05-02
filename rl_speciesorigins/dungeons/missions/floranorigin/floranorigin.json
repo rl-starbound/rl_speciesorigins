@@ -9552,63 +9552,63 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/materials.json"
+         "source":"..\/..\/..\/tilesets\/packed\/materials.json"
         }, 
         {
          "firstgid":198,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/miscellaneous.json"
+         "source":"..\/..\/..\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
          "firstgid":222,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/liquids.json"
+         "source":"..\/..\/..\/tilesets\/packed\/liquids.json"
         }, 
         {
          "firstgid":250,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/supports.json"
+         "source":"..\/..\/..\/tilesets\/packed\/supports.json"
         }, 
         {
          "firstgid":287,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/huge-objects.json"
+         "source":"..\/..\/..\/tilesets\/packed\/huge-objects.json"
         }, 
         {
          "firstgid":388,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/door.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/door.json"
         }, 
         {
          "firstgid":520,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/floran.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/floran.json"
         }, 
         {
          "firstgid":715,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/pot.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/pot.json"
         }, 
         {
          "firstgid":1012,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/decorative.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
          "firstgid":2453,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/wire.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
          "firstgid":2675,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/generic.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/generic.json"
         }, 
         {
          "firstgid":4659,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/protectorate.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/protectorate.json"
         }, 
         {
          "firstgid":4757,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-type\/container.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-type\/container.json"
         }, 
         {
          "firstgid":5042,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/light.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/light.json"
         }, 
         {
          "firstgid":5500,
-         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/speciesorigins.json"
+         "source":"..\/..\/..\/tilesets\/rl_speciesorigins\/objects.json"
         }],
  "tilewidth":8,
  "version":1,

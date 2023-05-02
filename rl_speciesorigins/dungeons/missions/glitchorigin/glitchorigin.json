@@ -8213,71 +8213,71 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/materials.json"
+         "source":"..\/..\/..\/tilesets\/packed\/materials.json"
         }, 
         {
          "firstgid":198,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/miscellaneous.json"
+         "source":"..\/..\/..\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
          "firstgid":222,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/liquids.json"
+         "source":"..\/..\/..\/tilesets\/packed\/liquids.json"
         }, 
         {
          "firstgid":250,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/supports.json"
+         "source":"..\/..\/..\/tilesets\/packed\/supports.json"
         }, 
         {
          "firstgid":287,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/huge-objects.json"
+         "source":"..\/..\/..\/tilesets\/packed\/huge-objects.json"
         }, 
         {
          "firstgid":388,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/furniture.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/furniture.json"
         }, 
         {
          "firstgid":742,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/pot.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/pot.json"
         }, 
         {
          "firstgid":1039,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/generic.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/generic.json"
         }, 
         {
          "firstgid":3023,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/light.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/light.json"
         }, 
         {
          "firstgid":3481,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/decorative.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
          "firstgid":4922,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/glitch.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/glitch.json"
         }, 
         {
          "firstgid":5148,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/door.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/door.json"
         }, 
         {
          "firstgid":5280,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/wire.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
          "firstgid":5502,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/storage.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/storage.json"
         }, 
         {
          "firstgid":5736,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/farmable.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/farmable.json"
         }, 
         {
          "firstgid":5811,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/crafting.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/crafting.json"
         }, 
         {
          "firstgid":5891,
-         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/speciesorigins.json"
+         "source":"..\/..\/..\/tilesets\/rl_speciesorigins\/objects.json"
         }],
  "tilewidth":8,
  "version":1,

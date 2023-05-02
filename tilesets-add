@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -eu
+
+SB_ASSETS_DIR=${SB_ASSETS_DIR:-~/src/starbound/assets/packed}
+
+if [ ! -f _metadata ]; then
+  echo 'ERROR: not in mod root. Aborting.' >&2
+  exit 1
+fi
+
+if [ ! -r tilesets ]; then
+  ln -s -- "${SB_ASSETS_DIR}/tilesets" .
+elif [ ! -r tilesets/packed ]; then
+  cd tilesets
+  ln -s -- "${SB_ASSETS_DIR}/tilesets/packed" .
+else
+  echo 'ERROR: tilesets/packed directory exists. Aborting.' >&2
+  exit 1
+fi

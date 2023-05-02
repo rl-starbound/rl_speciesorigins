@@ -2,7 +2,7 @@
   "modId" : 47330,
   "modName" : "rl_strong",
   "description" : "This tile is extremely strong.",
-  "health" : 2048,
+  "health" : 24576,
   "harvestLevel" : 99,
   "breaksWithTile" : true,
 

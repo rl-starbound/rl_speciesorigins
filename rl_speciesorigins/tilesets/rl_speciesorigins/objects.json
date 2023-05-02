@@ -1,6 +1,6 @@
 {
   "margin" : 0,
-  "name" : "objects-by-race/speciesorigins",
+  "name" : "rl_speciesorigins/objects",
   "properties" :  {
   },
   "spacing" : 0,
@@ -96,34 +96,34 @@
   },
   "tiles" : {
     "0" : {
-      "image" : "../../../_tiled/packed/objects/apexbeamaxe.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/apexbeamaxe.png"
     },
     "1" : {
-      "image" : "../../../_tiled/packed/objects/avianbeamaxe.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/avianbeamaxe.png"
     },
     "2" : {
-      "image" : "../../../_tiled/packed/objects/floranbeamaxe.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/floranbeamaxe.png"
     },
     "3" : {
-      "image" : "../../../_tiled/packed/objects/glitchbeamaxe.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/glitchbeamaxe.png"
     },
     "4" : {
-      "image" : "../../../_tiled/packed/objects/hylotlbeamaxe.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/hylotlbeamaxe.png"
     },
     "5" : {
-      "image" : "../../../_tiled/packed/objects/novakidbeamaxe.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/novakidbeamaxe.png"
     },
     "6" : {
-      "image" : "../../../_tiled/packed/objects/originsbodyapex.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/originsbodyapex.png"
     },
     "7" : {
-      "image" : "../../../_tiled/packed/objects/originsbodyfloran.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/originsbodyfloran.png"
     },
     "8" : {
-      "image" : "../../../_tiled/packed/objects/originsbodyglitch.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/originsbodyglitch.png"
     },
     "9" : {
-      "image" : "../../../_tiled/packed/objects/originsbodyhylotl.png"
+      "image" : "../../_tiled/rl_speciesorigins/objects/originsbodyhylotl.png"
     }
   },
   "tilewidth" : 8

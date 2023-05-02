@@ -10254,75 +10254,75 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/materials.json"
+         "source":"..\/..\/..\/tilesets\/packed\/materials.json"
         }, 
         {
          "firstgid":198,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/miscellaneous.json"
+         "source":"..\/..\/..\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
          "firstgid":222,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/liquids.json"
+         "source":"..\/..\/..\/tilesets\/packed\/liquids.json"
         }, 
         {
          "firstgid":250,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/supports.json"
+         "source":"..\/..\/..\/tilesets\/packed\/supports.json"
         }, 
         {
          "firstgid":287,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/huge-objects.json"
+         "source":"..\/..\/..\/tilesets\/packed\/huge-objects.json"
         }, 
         {
          "firstgid":388,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/wire.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
          "firstgid":610,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/door.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/door.json"
         }, 
         {
          "firstgid":742,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/light.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/light.json"
         }, 
         {
          "firstgid":1200,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/decorative.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
          "firstgid":2641,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/apex.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/apex.json"
         }, 
         {
          "firstgid":3012,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/human.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/human.json"
         }, 
         {
          "firstgid":3300,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/storage.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/storage.json"
         }, 
         {
          "firstgid":3534,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/protectorate.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/protectorate.json"
         }, 
         {
          "firstgid":3632,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-race\/floran.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/floran.json"
         }, 
         {
          "firstgid":3827,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-colonytag\/outpost.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-colonytag\/outpost.json"
         }, 
         {
          "firstgid":3931,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-category\/crafting.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/crafting.json"
         }, 
         {
          "firstgid":4011,
-         "source":"..\/..\/..\/..\/..\/assets\/packed\/tilesets\/packed\/objects-by-type\/loungeable.json"
+         "source":"..\/..\/..\/tilesets\/packed\/objects-by-type\/loungeable.json"
         }, 
         {
          "firstgid":4292,
-         "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/speciesorigins.json"
+         "source":"..\/..\/..\/tilesets\/rl_speciesorigins\/objects.json"
         }],
  "tilewidth":8,
  "version":1,
